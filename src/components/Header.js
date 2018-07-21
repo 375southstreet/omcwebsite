@@ -12,7 +12,6 @@ export default class Header extends React.Component {
         </div>
         <SliderBox />
         <AboutSection />
-        <FindDoctor />
         <AboutSection2Dot1 />
         <NewsAndServicesSection />
         <TeamSection />
@@ -37,7 +36,7 @@ class NavigationBar extends React.Component {
                   <nav className="navbar navbar-expand-lg navbar-light p-0">
                     <div className="navbar-brand clearfix hidden-lg-up">
                       <div id="logo-mobile" className="logo">
-                        <a href="index.html"><img id="logo-img-mobile" src="images/logo_pink_orig.png" width="50" alt="OM Clinic" /></a>
+                        <a href="index.html"><img id="logo-img-mobile" src="images/logo_pink_orig.png" width="50" alt="O.M Clinic" /></a>
                       </div>
                     </div>
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse-1" aria-controls="navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
@@ -89,7 +88,7 @@ class NavigationBarLogo extends React.Component {
       <div className="col-md-auto hidden-md-down pl-3">
         <div className="header-first clearfix">
           <div id="logo" className="logo">
-            <a href="index.html"><img id="logo_img" src="images/logo_pink_orig.png" height="70" width="50" alt="OM Clinic" /></a>
+            <a href="index.html"><img id="logo_img" src="images/logo_pink_orig.png" height="70" width="50" alt="O.M Clinic" /></a>
           </div>
         </div>
       </div>
@@ -149,7 +148,7 @@ class NotificationBarRight extends React.Component {
             <li className="list-inline-item"><a className="link-light" href="#"><i className="fa fa-user-md pr-1"></i>Find a Doctor</a></li>
             <li className="list-inline-item"><a className="link-light" href="#"><i className="fa fa-flask pr-1"></i>Researches</a></li>
             <li className="list-inline-item"><a className="link-light" href="#"><i className="fa fa-info-circle pr-1"></i>Information</a></li>
-            <li className="list-inline-item hidden-md-down"><strong className="pl-1">Call Us:</strong> +12 123 123 123</li>
+            <li className="list-inline-item hidden-md-down"><strong className="pl-1">Call Us:</strong> +91 95516 25019</li>
           </ul>
         </div>
       </div>
@@ -272,9 +271,9 @@ class AboutSection extends React.Component {
       <section className="pv-10 light-gray-bg clearfix">
         <div className="container">
         <br />
-          <h3 className="title logo-font text-center text-default">OM Child &nbsp;<span className="text-muted">and</span>&nbsp; Health Care</h3>
+          <h3 className="title logo-font text-center text-default">O.M Child &nbsp;<span className="text-muted">and</span>&nbsp; Health Care</h3>
           <div className="separator"></div>
-          <p className="text-center"><span className="text-default">OM Child</span> & <span className="text-default">Health Care</span> clinic was opened in 2014, since then we are providing holistic care in the field of child health, vaccination, joint pain, back pain, musculoskeletal pain, Rheumatological problems, diabetes, hypertension, cardio respiratory problems <br /> We have successfully managed nearly 10000 patients in the past 3 years.</p>
+          <p className="text-center"><span className="text-default">O.M Child</span> & <span className="text-default">Health Care</span> clinic was opened in 2014, since then we are providing holistic care in the field of child health, vaccination, joint pain, back pain, musculoskeletal pain, Rheumatological problems, diabetes, hypertension, cardio respiratory problems <br /> We have successfully managed nearly 10000 patients in the past 3 years.</p>
           <br />
           <AboutSection3 />
         </div>
@@ -338,13 +337,13 @@ class AboutSection2 extends React.Component {
           </div>
         </div>
         <div className="full-text-container light-gray-bg">
-          <h3 className="logo-font mt-4"><span className="text-muted">About</span> <span className="text-default">OM Childcare</span></h3>
+          <h3 className="logo-font mt-4"><span className="text-muted">About</span> <span className="text-default">O.M Childcare</span></h3>
           <div className="separator-2 hidden-lg-down"></div>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi veniam, veritatis sint consequuntur! Natus, culpa, explicabo! Non quo laboriosam nobis quia, amet excepturi optio dolor impedit. Perferendis libero unde, nulla deserunt sequi. Voluptatum, officia suscipit porro reprehenderit vitae quo rem reiciendis, a vero quae. Vero beatae voluptatum.</p>
           <div className="separator-3 hidden-lg-down"></div>
         </div>
         <div className="full-text-container light-gray-bg">
-          <h3 className="logo-font mt-4"><span className="text-muted">About</span> <span className="text-default">OM Healthcare</span></h3>
+          <h3 className="logo-font mt-4"><span className="text-muted">About</span> <span className="text-default">O.M Healthcare</span></h3>
           <div className="separator-2 hidden-lg-down"></div>
           <p>
           Content under adult health
@@ -382,7 +381,7 @@ class AboutSection2Dot1 extends React.Component {
               <div className="feature-box-2 object-non-visible right animated object-visible fadeInDownSmall" data-animation-effect="fadeInDownSmall" data-effect-delay="100">
                 <span className="icon default-bg small"><i className="fa fa-user-md"></i></span>
                 <div className="body">
-                  <h3 className="logo-font mt-4"><span className="text-default">OM Childcare</span> Services</h3>
+                  <h3 className="logo-font mt-4"><span className="text-default">O.M Childcare</span> Services</h3>
                   <p>Content for childcare. Provide some description here, add more details and information, what else?</p>
                   <div className="separator-3"></div>
                   <ul className="list-icons">
@@ -401,7 +400,7 @@ class AboutSection2Dot1 extends React.Component {
               <div className="feature-box-2 object-non-visible animated object-visible fadeInDownSmall" data-animation-effect="fadeInDownSmall" data-effect-delay="100">
                 <span className="icon default-bg small"><i className="fa fa-medkit"></i></span>
                 <div className="body">
-                  <h3 className="logo-font mt-4"><span className="text-default">OM Healthcare</span> Services </h3>
+                  <h3 className="logo-font mt-4"><span className="text-default">O.M Healthcare</span> Services </h3>
                   <p>Content for childcare. Provide some description here, add more details and information, what else?</p>
                   <div className="separator-2"></div>
                   <ul className="list-icons">
@@ -422,6 +421,157 @@ class AboutSection2Dot1 extends React.Component {
   }
 };
 
+class ServicesSlickSlider extends React.Component {
+  render() {
+    return(
+      <div className="slick-carousel content-slider-with-large-controls-autoplay dark-controls light-gray-bg buttons-hide">
+        <div className="image-box style-2">
+          <div className="overlay-container overlay-visible">
+            <img src="images/medical-service-1.jpg" alt="" />
+            <a href="#" className="overlay-link"><i className="fa fa-link"></i></a>
+            <div className="overlay-bottom hidden-xs">
+              <div className="text">
+                <p className="lead margin-clear text-left">Medical Education</p>
+              </div>
+            </div>
+          </div>
+          <div className="body padding-horizontal-clear">
+            <p>Lorem ipsum dolor sit amet, consectetur adipis elit. Aliquam atque ipsam nihil dood truck quinoa.</p>
+            <a className="link-dark" href="page-services.html">Read More<i className="pl-1 fa fa-angle-double-right"></i></a>
+          </div>
+        </div>
+        <div className="image-box style-2">
+          <div className="overlay-container overlay-visible">
+            <img src="images/medical-service-2.jpg" alt="" />
+            <a href="#" className="overlay-link"><i className="fa fa-link"></i></a>
+            <div className="overlay-bottom hidden-xs">
+              <div className="text">
+                <p className="lead margin-clear text-left">Seminars For Medicals Professionals</p>
+              </div>
+            </div>
+          </div>
+          <div className="body padding-horizontal-clear">
+            <p>Lorem ipsum dolor sit amet, consectetur adipis elit. Aliquam atque ipsam nihil dood truck quinoa.</p>
+            <a className="link-dark" href="page-services.html">Read More<i className="pl-1 fa fa-angle-double-right"></i></a>
+          </div>
+        </div>
+        <div className="image-box style-2">
+          <div className="overlay-container overlay-visible">
+            <img src="images/medical-service-3.jpg" alt="" />
+            <a href="#" className="overlay-link"><i className="fa fa-link"></i></a>
+            <div className="overlay-bottom hidden-xs">
+              <div className="text">
+                <p className="lead margin-clear text-left">Research &amp; Development</p>
+              </div>
+            </div>
+          </div>
+          <div className="body padding-horizontal-clear">
+            <p>Lorem ipsum dolor sit amet, consectetur adipis elit. Aliquam atque ipsam nihil dood truck quinoa.</p>
+            <a className="link-dark" href="page-services.html">Read More<i className="pl-1 fa fa-angle-double-right"></i></a>
+          </div>
+        </div>
+      </div>
+    )
+  }
+};
+
+class ServiceGallery extends React.Component {
+  render() {
+    return(
+      <div className="col-lg-4">
+        <h3 className="mt-4">Our <span className="text-default">Gallery</span></h3>
+        <div className="separator-2"></div>
+
+        <div className="row grid-space-20">
+          <div className="col-4">
+            <div className="overlay-container">
+              <img src="images/portfolio-1.png" alt="" />
+              <a href="images/portfolio-1.png" className="overlay-link small popup-img" title="Second image title">
+                <i className="fa fa-plus"></i>
+              </a>
+            </div>
+          </div>
+          <div className="col-4">
+            <div className="overlay-container">
+              <img src="images/portfolio-2.jpg" alt=""/>
+              <a href="images/portfolio-2.jpg" className="overlay-link small popup-img" title="Third image title">
+                <i className="fa fa-plus"></i>
+              </a>
+            </div>
+          </div>
+          <div className="col-4">
+            <div className="overlay-container">
+              <img src="images/portfolio-3.jpg" alt=""/>
+              <a href="images/portfolio-3.jpg" className="overlay-link small popup-img" title="Fourth image title">
+                <i className="fa fa-plus"></i>
+              </a>
+            </div>
+          </div>
+
+        </div>
+        <br />
+        <div className="row grid-space-20">
+
+          <div className="col-4">
+            <div className="overlay-container">
+              <img src="images/portfolio-5.jpg" alt=""/ >
+              <a href="images/portfolio-5.jpg" className="overlay-link small popup-img" title="Fifth image title">
+                <i className="fa fa-plus"></i>
+              </a>
+            </div>
+          </div>
+          <div className="col-4">
+            <div className="overlay-container">
+              <img src="images/portfolio-6.jpg" alt=""/>
+              <a href="images/portfolio-6.jpg" className="overlay-link small popup-img" title="Fourth image title">
+                <i className="fa fa-plus"></i>
+              </a>
+            </div>
+          </div>
+          <div className="col-4">
+            <div className="overlay-container">
+              <img src="images/portfolio-4.jpg" alt=""/ >
+              <a href="images/portfolio-4.jpg" className="overlay-link small popup-img" title="Fifth image title">
+                <i className="fa fa-plus"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <br />
+        <div className="row grid-space-20">
+
+          <div className="col-4">
+            <div className="overlay-container">
+              <img src="images/portfolio-7.jpg" alt=""/ >
+              <a href="images/portfolio-7.jpg" className="overlay-link small popup-img" title="Fifth image title">
+                <i className="fa fa-plus"></i>
+              </a>
+            </div>
+          </div>
+          <div className="col-4">
+            <div className="overlay-container">
+              <img src="images/portfolio-8.jpg" alt=""/>
+              <a href="images/portfolio-8.jpg" className="overlay-link small popup-img" title="Fourth image title">
+                <i className="fa fa-plus"></i>
+              </a>
+            </div>
+          </div>
+          <div className="col-4">
+            <div className="overlay-container">
+              <img src="images/portfolio-9.jpg" alt=""/ >
+              <a href="images/portfolio-9.jpg" className="overlay-link small popup-img" title="Fifth image title">
+                <i className="fa fa-plus"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    )
+  }
+};
+
 class NewsAndServicesSection extends React.Component {
   render(){
     var nsStyle1 = {
@@ -432,14 +582,14 @@ class NewsAndServicesSection extends React.Component {
     };
     var nsStyle3 = {
       opacity: 1,
-      width: '1778px',
-      transform: 'translate3d(-762px, 0px, 0px)'
+      width: '254px',
+      transform: 'translate3d(-509px, 0px, 0px)'
     };
     return(
       <section className="section clearfix" id="news">
         <div className="container">
           <div className="row">
-            <div className="col-lg-6">
+            <div className="col-lg-5">
               <h3 className="mt-4">Latest <span className="text-default">News</span></h3>
               <div className="separator-2"></div>
               <div className="block">
@@ -452,8 +602,10 @@ class NewsAndServicesSection extends React.Component {
                   </div>
                   <div className="media-body">
                     <h5 className="media-heading mb-2"><a href="blog-post.html">Lorem ipsum dolor sit amet</a></h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt corrupti, cum exercitationem.</p>
-                    <a href="#">Read More<i className="fa fa-long-arrow-right pl-1"></i></a>
+                    <div className="row">
+                      <div className="col-lg-8">second line of news</div>
+                      <div className="col-lg-4 pull-right"><a href="#">Read More<i className="fa fa-long-arrow-right pl-1"></i></a></div>
+                    </div>
                   </div>
                 </div>
                 <hr />
@@ -466,8 +618,10 @@ class NewsAndServicesSection extends React.Component {
                   </div>
                   <div className="media-body">
                     <h5 className="media-heading mb-2"><a href="blog-post.html">Cum eligendi nisi rerum porro</a></h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt corrupti, cum exercitationem.</p>
-                    <a href="#">Read More<i className="fa fa-long-arrow-right pl-1"></i></a>
+                    <div className="row">
+                      <div className="col-lg-8">second line of news</div>
+                      <div className="col-lg-4 pull-right"><a href="#">Read More<i className="fa fa-long-arrow-right pl-1"></i></a></div>
+                    </div>
                   </div>
                 </div>
                 <hr />
@@ -480,21 +634,39 @@ class NewsAndServicesSection extends React.Component {
                   </div>
                   <div className="media-body">
                     <h5 className="media-heading mb-2"><a href="blog-post.html">Cum eligendi nisi rerum porro</a></h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt corrupti, cum exercitationem.</p>
-                    <a href="#">Read More<i className="fa fa-long-arrow-right pl-1"></i></a>
+                    <div className="row">
+                      <div className="col-lg-8">second line of news</div>
+                      <div className="col-lg-4 pull-right"><a href="#">Read More<i className="fa fa-long-arrow-right pl-1"></i></a></div>
+                    </div>
+                  </div>
+                </div>
+                <hr />
+                <div className="media margin-clear">
+                  <div className="d-flex pr-2">
+                    <div className="overlay-container">
+                      <img className="media-object" src="images/medical-blog-thumb-3.jpg" alt="blog-thumb" />
+                      <a href="blog-post.html" className="overlay-link small"><i className="fa fa-link"></i></a>
+                    </div>
+                  </div>
+                  <div className="media-body">
+                    <h5 className="media-heading mb-2"><a href="blog-post.html">Cum eligendi nisi rerum porro</a></h5>
+                    <div className="row">
+                      <div className="col-lg-8">second line of news</div>
+                      <div className="col-lg-4 pull-right"><a href="#">Read More<i className="fa fa-long-arrow-right pl-1"></i></a></div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
             <div className="col-lg-3">
-              <h3 className="mt-4">Our <span className="text-default">Departments</span></h3>
+              <h3 className="mt-4">Our <span className="text-default">Services</span></h3>
               <div className="separator-2"></div>
-              <div className="collapse-style-2 mb-4" id="accordion-2" role="tablist" aria-multiselectable="true">
+              <div className="collapse-style-2 mb-4" id="accordion-1" role="tablist" aria-multiselectable="true">
                 <div className="card">
                   <div className="card-header" role="tab" id="headingOne">
                     <h4 className="mb-0">
-                      <a data-toggle="collapse" data-parent="#accordion-2" href="#collapseOne-2" aria-expanded="false" aria-controls="collapseOne-2" className="collapsed">
-                        <i className="fa fa-eye pr-10"></i>Ophthalmology
+                      <a data-toggle="collapse" data-parent="#accordion-1" href="#collapseOne-2" aria-expanded="false" aria-controls="collapseOne-2" className="collapsed">
+                        <i className="fa fa-medkit pr-10"></i>Outpatient Treatment
                       </a>
                     </h4>
                   </div>
@@ -507,8 +679,8 @@ class NewsAndServicesSection extends React.Component {
                 <div className="card">
                   <div className="card-header" role="tab" id="headingTwo">
                     <h4 className="mb-0">
-                      <a data-toggle="collapse" data-parent="#accordion-2" href="#collapseTwo-2" className="collapsed" aria-expanded="false" aria-controls="collapseTwo-2">
-                        <i className="fa fa-leaf pr-10"></i>Primary care
+                      <a data-toggle="collapse" data-parent="#accordion-1" href="#collapseTwo-2" className="collapsed" aria-expanded="false" aria-controls="collapseTwo-2" >
+                        <i className="fa fa fa-hospital-o pr-10"></i>Inpatient Treatment
                       </a>
                     </h4>
                   </div>
@@ -521,11 +693,12 @@ class NewsAndServicesSection extends React.Component {
                 <div className="card">
                   <div className="card-header" role="tab" id="headingThree">
                     <h4 className="mb-0">
-                      <a data-toggle="collapse" data-parent="#accordion-2" href="#collapseThree-2" className="collapsed" aria-expanded="false" aria-controls="collapseThree-2">
-                        <i className="fa fa-users pr-10"></i>Paediatrics
+                      <a data-toggle="collapse" data-parent="#accordion-1" href="#collapseThree-2" className="collapsed" aria-expanded="false" aria-controls="collapseThree-2">
+                        <i className="fa fa-eyedropper pr-10"></i>Vaccination
                       </a>
                     </h4>
                   </div>
+
                   <div id="collapseThree-2" className="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
                     <div className="card-block bordered p-15">
                       Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officiaasd. <a href="#">Read More<i className="fa fa-long-arrow-right pl-1"></i></a>
@@ -535,8 +708,8 @@ class NewsAndServicesSection extends React.Component {
                 <div className="card">
                   <div className="card-header" role="tab" id="headingFour">
                     <h4 className="mb-0">
-                      <a data-toggle="collapse" data-parent="#accordion-2" href="#collapseFour-2" className="collapsed" aria-expanded="false" aria-controls="collapseFour-2">
-                        <i className="fa-female fa pr-10"></i>Gynaecology
+                      <a data-toggle="collapse" data-parent="#accordion-1" href="#collapseFour-2" className="collapsed" aria-expanded="false" aria-controls="collapseFour-2">
+                        <i className="fa-stethoscope fa pr-10"></i>Health Checkup
                       </a>
                     </h4>
                   </div>
@@ -549,8 +722,8 @@ class NewsAndServicesSection extends React.Component {
                 <div className="card">
                   <div className="card-header" role="tab" id="headingFive">
                     <h4 className="mb-0">
-                      <a data-toggle="collapse" data-parent="#accordion-2" href="#collapseFive-2" className="collapsed" aria-expanded="false" aria-controls="collapseFive-2">
-                        <i className="fa-road fa pr-10"></i>Orthopaedics
+                      <a data-toggle="collapse" data-parent="#accordion-1" href="#collapseFive-2" className="collapsed" aria-expanded="false" aria-controls="collapseFive-2">
+                        <i className="fa-road fa pr-10"></i>Lab Services
                       </a>
                     </h4>
                   </div>
@@ -563,8 +736,8 @@ class NewsAndServicesSection extends React.Component {
                 <div className="card">
                   <div className="card-header" role="tab" id="headingSix">
                     <h4 className="mb-0">
-                      <a data-toggle="collapse" data-parent="#accordion-2" href="#collapseSix-2" className="collapsed" aria-expanded="false" aria-controls="collapseSix-2">
-                        <i className="fa-heart fa pr-10"></i>Cardiology
+                      <a data-toggle="collapse" data-parent="#accordion-1" href="#collapseSix-2" className="collapsed" aria-expanded="false" aria-controls="collapseSix-2">
+                        <i className="fa-book fa pr-10"></i>Health Education
                       </a>
                     </h4>
                   </div>
@@ -574,115 +747,24 @@ class NewsAndServicesSection extends React.Component {
                     </div>
                   </div>
                 </div>
+                <div className="card">
+                  <div className="card-header" role="tab" id="headingSeven">
+                    <h4 className="mb-0">
+                      <a data-toggle="collapse" data-parent="#accordion-1" href="#collapseSeven-2" className="collapsed" aria-expanded="false" aria-controls="collapseSeven-2">
+                        <i className="fa-user-md fa pr-10"></i>Counseling
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="collapseSeven-2" className="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
+                    <div className="card-block bordered p-15">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officiaasd. <a href="#">Read More<i className="fa fa-long-arrow-right pl-1"></i></a>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-            <div className="col-lg-3">
-              <h3 className="mt-4">Health <span className="text-default">Services</span></h3>
-              <div className="separator-2"></div>
-              <div className="slick-carousel content-slider-with-large-controls-autoplay dark-controls light-gray-bg buttons-hide slick-initialized slick-slider slick-dotted"><button type="button" className="slick-prev slick-arrow" style={nsStyle2}>Prev</button>
-                <div className="slick-list draggable"><div className="slick-track" style={nsStyle3}><div className="image-box style-2 slick-slide slick-cloned" data-slick-index="-1" aria-hidden="true" tabIndex="-1" style={nsStyle1}>
-                  <div className="overlay-container overlay-visible">
-                    <img src="images/medical-service-3.jpg" alt="" />
-                    <a href="#" className="overlay-link" tabIndex="-1"><i className="fa fa-link"></i></a>
-                    <div className="overlay-bottom hidden-xs">
-                      <div className="text">
-                        <p className="lead margin-clear text-left">Research &amp; Development</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="body padding-horizontal-clear">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipis elit. Aliquam atque ipsam nihil dood truck quinoa.</p>
-                    <a className="link-dark" href="page-services.html" tabIndex="-1">Read More<i className="pl-1 fa fa-angle-double-right"></i></a>
-                  </div>
-                </div><div className="image-box style-2 slick-slide" data-slick-index="0" aria-hidden="true" tabIndex="-1" role="tabpanel" id="slick-slide10" aria-describedby="slick-slide-control10" style={nsStyle1}>
-                  <div className="overlay-container overlay-visible">
-                    <img src="images/medical-service-1.jpg" alt="" />
-                    <a href="#" className="overlay-link" tabIndex="-1"><i className="fa fa-link"></i></a>
-                    <div className="overlay-bottom hidden-xs">
-                      <div className="text">
-                        <p className="lead margin-clear text-left">Medical Education</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="body padding-horizontal-clear">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipis elit. Aliquam atque ipsam nihil dood truck quinoa.</p>
-                    <a className="link-dark" href="page-services.html" tabIndex="-1">Read More<i className="pl-1 fa fa-angle-double-right"></i></a>
-                  </div>
-                </div><div className="image-box style-2 slick-slide" data-slick-index="1" aria-hidden="true" tabIndex="-1" role="tabpanel" id="slick-slide11" aria-describedby="slick-slide-control11" style={nsStyle1}>
-                  <div className="overlay-container overlay-visible">
-                    <img src="images/medical-service-2.jpg" alt="" />
-                    <a href="#" className="overlay-link" tabIndex="-1"><i className="fa fa-link"></i></a>
-                    <div className="overlay-bottom hidden-xs">
-                      <div className="text">
-                        <p className="lead margin-clear text-left">Seminars For Medicals Professionals</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="body padding-horizontal-clear">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipis elit. Aliquam atque ipsam nihil dood truck quinoa.</p>
-                    <a className="link-dark" href="page-services.html" tabIndex="-1">Read More<i className="pl-1 fa fa-angle-double-right"></i></a>
-                  </div>
-                </div><div className="image-box style-2 slick-slide slick-current slick-active" data-slick-index="2" aria-hidden="false" tabIndex="0" role="tabpanel" id="slick-slide12" aria-describedby="slick-slide-control12" style={nsStyle1}>
-                  <div className="overlay-container overlay-visible">
-                    <img src="images/medical-service-3.jpg" alt="" />
-                    <a href="#" className="overlay-link" tabIndex="0"><i className="fa fa-link"></i></a>
-                    <div className="overlay-bottom hidden-xs">
-                      <div className="text">
-                        <p className="lead margin-clear text-left">Research &amp; Development</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="body padding-horizontal-clear">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipis elit. Aliquam atque ipsam nihil dood truck quinoa.</p>
-                    <a className="link-dark" href="page-services.html" tabIndex="0">Read More<i className="pl-1 fa fa-angle-double-right"></i></a>
-                  </div>
-                </div><div className="image-box style-2 slick-slide slick-cloned" data-slick-index="3" aria-hidden="true" tabIndex="-1" style={nsStyle1}>
-                  <div className="overlay-container overlay-visible">
-                    <img src="images/medical-service-1.jpg" alt="" />
-                    <a href="#" className="overlay-link" tabIndex="-1"><i className="fa fa-link"></i></a>
-                    <div className="overlay-bottom hidden-xs">
-                      <div className="text">
-                        <p className="lead margin-clear text-left">Medical Education</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="body padding-horizontal-clear">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipis elit. Aliquam atque ipsam nihil dood truck quinoa.</p>
-                    <a className="link-dark" href="page-services.html" tabIndex="-1">Read More<i className="pl-1 fa fa-angle-double-right"></i></a>
-                  </div>
-                </div><div className="image-box style-2 slick-slide slick-cloned" data-slick-index="4" aria-hidden="true" tabIndex="-1" style={nsStyle1}>
-                  <div className="overlay-container overlay-visible">
-                    <img src="images/medical-service-2.jpg" alt="" />
-                    <a href="#" className="overlay-link" tabIndex="-1"><i className="fa fa-link"></i></a>
-                    <div className="overlay-bottom hidden-xs">
-                      <div className="text">
-                        <p className="lead margin-clear text-left">Seminars For Medicals Professionals</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="body padding-horizontal-clear">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipis elit. Aliquam atque ipsam nihil dood truck quinoa.</p>
-                    <a className="link-dark" href="page-services.html" tabIndex="-1">Read More<i className="pl-1 fa fa-angle-double-right"></i></a>
-                  </div>
-                </div><div className="image-box style-2 slick-slide slick-cloned" data-slick-index="5" aria-hidden="true" tabIndex="-1" style={nsStyle1}>
-                  <div className="overlay-container overlay-visible">
-                    <img src="images/medical-service-3.jpg" alt="" />
-                    <a href="#" className="overlay-link" tabIndex="-1"><i className="fa fa-link"></i></a>
-                    <div className="overlay-bottom hidden-xs">
-                      <div className="text">
-                        <p className="lead margin-clear text-left">Research &amp; Development</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="body padding-horizontal-clear">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipis elit. Aliquam atque ipsam nihil dood truck quinoa.</p>
-                    <a className="link-dark" href="page-services.html" tabIndex="-1">Read More<i className="pl-1 fa fa-angle-double-right"></i></a>
-                  </div>
-                </div></div></div>
+            <ServiceGallery />
 
-
-              <button type="button" className="slick-next slick-arrow" style={nsStyle2}>Next</button><ul className="slick-dots" role="tablist"><li className="" role="presentation"><button type="button" role="tab" id="slick-slide-control10" aria-controls="slick-slide10" aria-label="1 of 3" tabIndex="-1">1</button></li><li role="presentation" className=""><button type="button" role="tab" id="slick-slide-control11" aria-controls="slick-slide11" aria-label="2 of 3" tabIndex="-1">2</button></li><li role="presentation" className="slick-active"><button type="button" role="tab" id="slick-slide-control12" aria-controls="slick-slide12" aria-label="3 of 3" tabIndex="0" aria-selected="true">3</button></li></ul></div>
-            </div>
           </div>
         </div>
       </section>
@@ -707,23 +789,23 @@ class FooterMain extends React.Component {
                           <img id="logo-footer" src="images/logo_pink_orig.png" alt="" />
                         </div>
                         <div className="col-lg-7">
-                          <h4 className="title logo-font text-default text-left">OM Health <span className="text-muted"> & </span>Child Care</h4>
+                          <h4 className="title logo-font text-default text-left">O.M Health <span className="text-muted"> & </span>Child Care</h4>
                         </div>
                       </div>
                     </div>
                     <div className="row">
                       <div className="col-lg-6">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus illo vel dolorum soluta consectetur doloribus sit. Delectus non tenetur odit dicta vitae debitis suscipit doloribus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed dolore fugit vitae quia dicta inventore reiciendis. Ipsa, aut voluptas quaerat.</p>
+                        <p>We have successfully managed nearly 10,000 patients in the past 3 years. We develop strong bonds with many of our patients and gain great satisfaction from seeing their happiness. Reach us at., </p>
+                        <ul className="list-icons">
+                          <li><i className="fa fa-map-marker pr-10 text-default"></i>Old No-31, New No-13, Kamaraj Salai, Anagaputhur, Chennai - 600 070</li>
+                          <li><i className="fa fa-phone pr-10 text-default"></i> +91 95516 25019, +91 94446 98388</li>
+                          <li><a href="mailto:email@domain.com"><i className="fa fa-envelope-o pr-10"></i>email@domain.com</a></li>
+                        </ul>
                         <ul className="social-links circle animated-effect-1">
                           <li className="twitter"><a href="#"><i className="fa fa-twitter"></i></a></li>
                           <li className="googleplus"><a href="#"><i className="fa fa-google-plus"></i></a></li>
                           <li className="youtube"><a href="#"><i className="fa fa-youtube"></i></a></li>
                           <li className="facebook"><a href="#"><i className="fa fa-facebook"></i></a></li>
-                        </ul>
-                        <ul className="list-icons">
-                          <li><i className="fa fa-map-marker pr-10 text-default"></i>Old No-31, New No-13, Kamaraj Salai, Anagaputhur, Chennai - 600 070</li>
-                          <li><i className="fa fa-phone pr-10 text-default"></i> +91 95516 25019, +91 94446 98388</li>
-                          <li><a href="mailto:email@domain.com"><i className="fa fa-envelope-o pr-10"></i>email@domain.com</a></li>
                         </ul>
                       </div>
                       <div className="col-lg-6">
@@ -793,48 +875,65 @@ class TeamSection extends React.Component {
     };
     return (
       <section className="clearfix">
-              <div className="container pv-20">
-                <div className="row justify-content-lg-center">
-                  <div className="col-lg-8">
-                    <h3 className="mt-4 text-center">Meet Our <span className="text-default">Team</span></h3>
-                    <div className="separator"></div>
-                    <p className="lead text-center">Collaborative careCollaborative practiceModel of care Patient outcomes Provider outcomes Evaluation Evidence-based practice Patient-centred careFamily-centred care</p>
+        <div className="container pv-20">
+          <div className="row justify-content-lg-center">
+            <div className="col-lg-10">
+              <h3 className="mt-4 text-center">Meet Our <span className="text-default">Team</span></h3>
+              <div className="separator"></div>
+              <p className="lead text-center">O.M Clinic is led by couple of Young Experienced Doctors. <br />Our Team is responsible for Family centred care, Great bond and Satisfaction. <br /> Medicine is not just a business to us. It is our life. Our business and reputation rests on the happiness of every individual patient we see and your privacy is absolutely paramount. You will feel our warmth and support from the moment you walk through our door.  </p>
+            </div>
+          </div>
+        </div>
+        <div className="row justify-content-center">
+          <div className="col-lg-3 col-md-6">
+            <div className="image-box team-member shadow mb-20">
+              <div className="overlay-container overlay-visible">
+                <img src="images/doctor-2.svg" alt="" />
+                <a href="#" className="overlay-link" title="Dr.M.Sabarinath, MBBS, MD (Paediatrics)"><i className="fa fa-link"></i></a>
+                <div className="overlay-bottom">
+                  <div className="text">
+                    <h3>Dr.M.Sabarinath, <br /><em className="small" style={teamStyle3}>MBBS,MD (PAED)</em></h3>
+                    <div className="separator light"></div>
+                    <p className="medium margin-clear"><em>Child Specialist</em></p>
                   </div>
                 </div>
               </div>
-              <div className="row justify-content-center">
-                <div className="col-lg-3 col-md-6">
-                  <div className="image-box team-member shadow mb-20">
-                    <div className="overlay-container overlay-visible">
-                      <img src="images/doctor-2.svg" alt="" />
-                      <a href="#" className="overlay-link" title="Dr.M.Sabarinath, MBBS, MD (Paediatrics)"><i className="fa fa-link"></i></a>
-                      <div className="overlay-bottom">
-                        <div className="text">
-                          <h3>Dr.M.Sabarinath, <em className="small" style={teamStyle3}>MBBS,MD (PAED)</em></h3>
-                          <div className="separator light"></div>
-                          <p className="medium margin-clear"><em>MD in Paediatrics &lrm; <br /> Child Specialist</em></p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-lg-3 col-md-6">
-                  <div className="image-box team-member shadow mb-20">
-                    <div className="overlay-container overlay-visible">
-                      <img src="images/doctor-1.svg" alt="" />
-                      <a href="#" className="overlay-link" title="Dr.C.Saranya, MBBS, MD (General Medicine), DM (Rheumatology) "><i className="fa fa-link"></i></a>
-                      <div className="overlay-bottom">
-                        <div className="text">
-                          <h3 className="title">Dr.C.Saranya, <em className="small" style={teamStyle3}>MBBS, MD (Gen Med)</em></h3>
-                          <div className="separator light"></div>
-                          <p className="medium margin-clear"><em>DM in Rheumatology<br /> Specialist in Cardiology, Muscle & Joint care</em></p>
-                        </div>
-                      </div>
-                    </div>
+            </div>
+          </div>
+          <div className="col-lg-3 col-md-6">
+            <div className="image-box team-member shadow mb-20">
+              <div className="overlay-container overlay-visible">
+                <img src="images/doctor-1.svg" alt="" />
+                <a href="#" className="overlay-link" title="Dr.C.Saranya, MBBS, MD (General Medicine), DM (Rheumatology) "><i className="fa fa-link"></i></a>
+                <div className="overlay-bottom">
+                  <div className="text">
+                    <h3 className="title">Dr.C.Saranya, <br/><em className="small" style={teamStyle3}>MBBS, MD (Gen Med)</em></h3>
+                    <div className="separator light"></div>
+                    <p className="medium margin-clear">
+                      <em>Internal Medicine & Rheumatology</em>
+                    </p>
                   </div>
                 </div>
               </div>
-            </section>
+            </div>
+          </div>
+          <div className="col-lg-3 col-md-6">
+            <div className="image-box team-member shadow mb-20">
+              <div className="overlay-container overlay-visible">
+                <img src="images/manager.svg" alt="" />
+                <a href="#" className="overlay-link" title="Clinic Manager"><i className="fa fa-link"></i></a>
+                <div className="overlay-bottom">
+                  <div className="text">
+                    <h3 className="title">V.Mahadevan, <br/><em className="small" style={teamStyle3}>Clinic Manager</em></h3>
+                    <div className="separator light"></div>
+                    <p className="medium margin-clear"><em> Clinic Manager</em></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     )
   }
 }
