@@ -370,7 +370,7 @@ class AboutSection2Dot1 extends React.Component {
     };
     var bgImage = {
       backgroundPosition: '50% 15%',
-      backgroundImage: 'url(../../images/background-image-1.png)'
+      backgroundImage: 'url(./images/background-image-1.png)'
     };
     return (
       <section className="pv-40 dark-translucent-bg" style={bgImage}>
