@@ -5,7 +5,6 @@ export default class Header extends React.Component {
   render(){
     return(
       <div className="page-wrapper">
-
         <div className="header-container">
           <NotificationBar />
           <NavigationBar />
@@ -17,7 +16,6 @@ export default class Header extends React.Component {
         <TeamSection />
         <FooterMain />
       </div>
-
     )
   }
 };
@@ -49,19 +47,19 @@ class NavigationBar extends React.Component {
                           <a href="index.html" className="nav-link" id="first-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Home</a>
                         </li>
                         <li className="nav-item dropdown mega-menu mega-menu--wide">
-                          <a href="#" className="nav-link" id="second-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
-                        </li>
-                        <li className="nav-item">
-                          <a href="#news" className="nav-link js-scroll-trigger" id="third-dropdown">News</a>
+                          <a href="#about-omc" className="nav-link smooth-scroll" id="second-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
                         </li>
                         <li className="nav-item dropdown mega-menu mega-menu--narrow">
-                          <a href="#" className="nav-link" id="fourth-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
+                          <a href="#services-omc" className="nav-link smooth-scroll" id="fourth-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
+                        </li>
+                        <li className="nav-item">
+                          <a href="#news-omc" className="nav-link smooth-scroll" id="third-dropdown">News</a>
                         </li>
                         <li className="nav-item dropdown">
-                          <a href="#" className="nav-link" id="fifth-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Team</a>
+                          <a href="#team-omc" className="nav-link smooth-scroll" id="fifth-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Team</a>
                         </li>
                         <li className="nav-item dropdown">
-                          <a href="#" className="nav-link" id="sixth-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Contact</a>
+                          <a href="#contact-omc" className="nav-link smooth-scroll" id="sixth-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Contact</a>
                         </li>
                       </ul>
                     </div>
@@ -72,7 +70,29 @@ class NavigationBar extends React.Component {
               </div>
               <div className="col-auto hidden-md-down pl-0 pl-md-1">
                 <div className="header-dropdown-buttons">
-                  <a href="#" className="btn btn-sm hidden-xs btn-default">Apointment <i className="fa fa-hospital-o pl-1"></i></a>
+                  <button href="#" className="btn btn-sm hidden-xs btn-default btn-animated" data-toggle="modal" data-target="#appointmentModal">Apointment <i className="fa fa-hospital-o pl-1"></i></button>
+                </div>
+                <div className="container">
+                  <div className="modal fade" id="appointmentModal" role="dialog">
+                    <div className="modal-dialog">
+
+                      <div className="modal-content">
+                        <div className="modal-header">
+                          <h4 className="modal-title">Appointment</h4>
+                          <button type="button" className="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div className="modal-body">
+                          <p>Please call us for Appointments between 6:30PM to 9PM on Monday to Saturday</p>
+                          <a href="tel:+919551625019" className="btn btn-sm hidden-xs btn-default btn-animated">Call Us <i className="pl-1 fa fa-phone"></i></a>
+                        </div>
+                        <div className="modal-footer">
+                          <button type="button" className="btn btn-sm hidden-xs btn-default btn-animated" data-dismiss="modal">Close <i className="pl-1 fa fa-close"></i></button>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+
                 </div>
               </div>
             </div>
@@ -114,22 +134,20 @@ class NotificationBar extends React.Component {
 class NotificationBarLeft extends React.Component {
   render(){
     return(
-      <div className="col-2 col-md-5">
+      <div className="col-3 col-md-5">
         <div className="header-top-first clearfix">
           <ul className="social-links circle small clearfix hidden-sm-down">
-            <li className="twitter"><a href="#"><i className="fa fa-twitter"></i></a></li>
-            <li className="googleplus"><a href="#"><i className="fa fa-google-plus"></i></a></li>
+            <li className="twitter"><a href="https://twitter.com/omcarepammal"><i className="fa fa-twitter"></i></a></li>
             <li className="youtube"><a href="#"><i className="fa fa-youtube-play"></i></a></li>
-            <li className="facebook"><a href="#"><i className="fa fa-facebook"></i></a></li>
+            <li className="facebook"><a href="https://www.facebook.com/omcare.pammal"><i className="fa fa-facebook"></i></a></li>
           </ul>
-          <div className="social-links hidden-md-up circle small">
+          <div className="social-links hidden-md-up circle small pull-right">
             <div className="btn-group dropdown">
               <button id="header-top-drop-1" type="button" className="btn dropdown-toggle dropdown-toggle--no-caret" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i className="fa fa-share-alt"></i></button>
               <ul className="dropdown-menu dropdown-animation" aria-labelledby="header-top-drop-1">
-                <li className="twitter"><a href="#"><i className="fa fa-twitter"></i></a></li>
-                <li className="googleplus"><a href="#"><i className="fa fa-google-plus"></i></a></li>
+                <li className="twitter"><a href="https://twitter.com/omcarepammal"><i className="fa fa-twitter"></i></a></li>
                 <li className="youtube"><a href="#"><i className="fa fa-youtube-play"></i></a></li>
-                <li className="facebook"><a href="#"><i className="fa fa-facebook"></i></a></li>
+                <li className="facebook"><a href="https://www.facebook.com/omcare.pammal"><i className="fa fa-facebook"></i></a></li>
               </ul>
             </div>
           </div>
@@ -142,13 +160,13 @@ class NotificationBarLeft extends React.Component {
 class NotificationBarRight extends React.Component {
   render(){
     return(
-      <div className="col-10 col-md-7">
+      <div className="col-8 col-md-7">
         <div id="header-top-second" className="clearfix text-right">
           <ul className="list-inline">
-            <li className="list-inline-item"><a className="link-light" href="#"><i className="fa fa-user-md pr-1"></i>Find a Doctor</a></li>
-            <li className="list-inline-item"><a className="link-light" href="#"><i className="fa fa-flask pr-1"></i>Researches</a></li>
+            <li className="list-inline-item hidden-md-down"><a className="link-light" href="#"><i className="fa fa-user-md pr-1"></i>Find a Doctor</a></li>
+            <li className="list-inline-item hidden-md-down"><a className="link-light" href="#"><i className="fa fa-flask pr-1"></i>Researches</a></li>
             <li className="list-inline-item"><a className="link-light" href="#"><i className="fa fa-info-circle pr-1"></i>Information</a></li>
-            <li className="list-inline-item hidden-md-down"><strong className="pl-1">Call Us:</strong> +91 95516 25019</li>
+            <li className="list-inline-item"><a className="link-light" href="tel:+919551625019"><i className="fa fa-phone pr-1"></i><strong>Call Us</strong></a></li>
           </ul>
         </div>
       </div>
@@ -181,37 +199,37 @@ class AboutSection3 extends React.Component {
     };
     return (
       <div className="row">
-            <div className="col-lg-4">
-              <div className="pv-30 ph-20 feature-box bordered shadow-2 text-center object-non-visible animated object-visible fadeInDownSmall" data-animation-effect="fadeInDownSmall" data-effect-delay="100">
-                <span className="icon default-bg circle"><i className="fa fa-plus-square"></i></span>
-                <h3>Since 2014</h3>
-                <div className="separator clearfix"></div>
-                <p>We provide modern scientific medicine with individualized care since 2014.</p>
-                <a href="#" className="btn btn-default btn-animated">Read More <i className="fa fa-angle-double-right"></i></a>
-              </div>
-            </div>
-            <div className="col-lg-4">
-              <div className="pv-30 ph-20 feature-box bordered shadow-2 text-center object-non-visible animated object-visible fadeInDownSmall" data-animation-effect="fadeInDownSmall" data-effect-delay="200">
-                <span className="icon default-bg circle"><i className="fa fa-hospital-o"></i></span>
-                <h3>Apointments</h3>
-                <div className="separator clearfix"></div>
-                <p>Consultation by appointment basis from Monday to Saturday in the evenings</p>
-                <a href="#" className="btn btn-default btn-animated">Make An Apointment <i className="pl-1 fa fa-stethoscope"></i></a>
-              </div>
-            </div>
-            <div className="col-lg-4">
-              <div className="pv-30 ph-20 feature-box bordered shadow-2 text-center object-non-visible animated object-visible fadeInDownSmall" data-animation-effect="fadeInDownSmall" data-effect-delay="300">
-                <span className="icon default-bg circle"><i className="fa fa-clock-o"></i></span>
-                <h3>Opening Hours</h3>
-                <div className="separator-2 mt-20 clearfix"></div>
-                <ul className="list-unstyled small list-icons text-left" style={listPaddingTopStyle2}>
-                  <li style={listPaddingTopStyle1}><strong className="text-default">Monday - Saturday</strong> <span className="pull-right">6.30PM - 9PM</span></li>
-                  <li style={listPaddingTopStyle1}><strong className="text-default">Sunday</strong> <span className="pull-right">Holiday</span></li>
-                </ul>
-                <a href="#" className="btn btn-default btn-animated">Call Us <i className="pl-1 fa fa-phone"></i></a>
-              </div>
-            </div>
+        <div className="col-lg-4">
+          <div className="pv-30 ph-20 feature-box bordered shadow-2 text-center object-non-visible animated object-visible fadeInDownSmall" data-animation-effect="fadeInDownSmall" data-effect-delay="100">
+            <span className="icon default-bg circle"><i className="fa fa-plus-square"></i></span>
+            <h3>Since 2014</h3>
+            <div className="separator clearfix"></div>
+            <p>We provide modern scientific medicine with individualized care since 2014.</p>
+            <a href="#" className="btn btn-default btn-animated btn-sm hidden-xs">Read More <i className="fa fa-angle-double-right"></i></a>
           </div>
+        </div>
+        <div className="col-lg-4">
+          <div className="pv-30 ph-20 feature-box bordered shadow-2 text-center object-non-visible animated object-visible fadeInDownSmall" data-animation-effect="fadeInDownSmall" data-effect-delay="200">
+            <span className="icon default-bg circle"><i className="fa fa-hospital-o"></i></span>
+            <h3>Apointments</h3>
+            <div className="separator clearfix"></div>
+            <p>Consultation by appointment basis from Monday to Saturday in the evenings</p>
+            <a href="#" className="btn btn-default btn-animated btn-sm hidden-xs">Make An Apointment <i className="pl-1 fa fa-stethoscope"></i></a>
+          </div>
+        </div>
+        <div className="col-lg-4">
+          <div className="pv-30 ph-20 feature-box bordered shadow-2 text-center object-non-visible animated object-visible fadeInDownSmall" data-animation-effect="fadeInDownSmall" data-effect-delay="300">
+            <span className="icon default-bg circle"><i className="fa fa-clock-o"></i></span>
+            <h3>Opening Hours</h3>
+            <div className="separator-2 mt-20 clearfix"></div>
+            <ul className="list-unstyled small list-icons text-left" style={listPaddingTopStyle2}>
+              <li style={listPaddingTopStyle1}><strong className="text-default">Monday - Saturday</strong> <span className="pull-right">6.30PM - 9PM</span></li>
+              <li style={listPaddingTopStyle1}><strong className="text-default">Sunday</strong> <span className="pull-right">Holiday</span></li>
+            </ul>
+            <a href="#" className="btn btn-default btn-sm hidden-xs btn-animated">Call Us <i className="pl-1 fa fa-phone"></i></a>
+          </div>
+        </div>
+      </div>
     )
   }
 };
@@ -226,7 +244,7 @@ class AboutSection4 extends React.Component {
             <h3>Since 2014</h3>
             <div className="separator clearfix"></div>
             <p>We provide modern scientific medicine with individualized care since 2014.</p>
-            <a href="#" className="btn btn-default btn-animated">Read More <i className="fa fa-angle-double-right"></i></a>
+            <a href="#" className="btn btn-default btn-animated btn-sm hidden-xs">Read More <i className="fa fa-angle-double-right"></i></a>
           </div>
         </div>
         <div className="col-md-6 col-lg-3">
@@ -268,7 +286,7 @@ class AboutSection4 extends React.Component {
 class AboutSection extends React.Component {
   render() {
     return (
-      <section className="pv-10 light-gray-bg clearfix">
+      <section className="pv-10 light-gray-bg clearfix" id="about-omc">
         <div className="container">
         <br />
           <h3 className="title logo-font text-center text-default">O.M Child &nbsp;<span className="text-muted">and</span>&nbsp; Health Care</h3>
@@ -373,7 +391,7 @@ class AboutSection2Dot1 extends React.Component {
       backgroundImage: 'url(./images/background-image-1.png)'
     };
     return (
-      <section className="pv-40 dark-translucent-bg" style={bgImage}>
+      <section className="pv-40 dark-translucent-bg" style={bgImage} id="services-omc">
         <div className="container">
           <div className="row">
             <div className="col-lg-6">
@@ -586,7 +604,7 @@ class NewsAndServicesSection extends React.Component {
       transform: 'translate3d(-509px, 0px, 0px)'
     };
     return(
-      <section className="section clearfix" id="news">
+      <section className="section clearfix" id="news-omc">
         <div className="container">
           <div className="row">
             <div className="col-lg-5">
@@ -604,7 +622,7 @@ class NewsAndServicesSection extends React.Component {
                     <h5 className="media-heading mb-2"><a href="blog-post.html">Lorem ipsum dolor sit amet</a></h5>
                     <div className="row">
                       <div className="col-lg-8">second line of news</div>
-                      <div className="col-lg-4 pull-right"><a href="#">Read More<i className="fa fa-long-arrow-right pl-1"></i></a></div>
+                      <div className="col-lg-4 pull-right"><a href="#" className="btn btn-default btn-sm hidden-xs btn-animated">Read More<i className="fa fa-long-arrow-right pl-1"></i></a></div>
                     </div>
                   </div>
                 </div>
@@ -620,7 +638,7 @@ class NewsAndServicesSection extends React.Component {
                     <h5 className="media-heading mb-2"><a href="blog-post.html">Cum eligendi nisi rerum porro</a></h5>
                     <div className="row">
                       <div className="col-lg-8">second line of news</div>
-                      <div className="col-lg-4 pull-right"><a href="#">Read More<i className="fa fa-long-arrow-right pl-1"></i></a></div>
+                      <div className="col-lg-4 pull-right"><a href="#" className="btn btn-default btn-sm hidden-xs btn-animated">Read More<i className="fa fa-long-arrow-right pl-1"></i></a></div>
                     </div>
                   </div>
                 </div>
@@ -636,7 +654,7 @@ class NewsAndServicesSection extends React.Component {
                     <h5 className="media-heading mb-2"><a href="blog-post.html">Cum eligendi nisi rerum porro</a></h5>
                     <div className="row">
                       <div className="col-lg-8">second line of news</div>
-                      <div className="col-lg-4 pull-right"><a href="#">Read More<i className="fa fa-long-arrow-right pl-1"></i></a></div>
+                      <div className="col-lg-4 pull-right"><a href="#"  className="btn btn-default btn-sm hidden-xs btn-animated">Read More<i className="fa fa-long-arrow-right pl-1"></i></a></div>
                     </div>
                   </div>
                 </div>
@@ -652,7 +670,7 @@ class NewsAndServicesSection extends React.Component {
                     <h5 className="media-heading mb-2"><a href="blog-post.html">Cum eligendi nisi rerum porro</a></h5>
                     <div className="row">
                       <div className="col-lg-8">second line of news</div>
-                      <div className="col-lg-4 pull-right"><a href="#">Read More<i className="fa fa-long-arrow-right pl-1"></i></a></div>
+                      <div className="col-lg-4 pull-right"><a href="#"  className="btn btn-default btn-sm hidden-xs btn-animated">Read More<i className="fa fa-long-arrow-right pl-1"></i></a></div>
                     </div>
                   </div>
                 </div>
@@ -775,87 +793,87 @@ class NewsAndServicesSection extends React.Component {
 class FooterMain extends React.Component {
   render(){
     return (
-      <footer id="footer" className="clearfix light">
-
-        <div className="footer">
-          <div className="container">
-            <div className="footer-inner">
-              <div className="row">
-                <div className="col-lg-8">
-                  <div className="footer-content">
-                    <div className="logo-footer">
+      <section id="contact-omc">
+        <footer id="footer" className="clearfix light">
+          <div className="footer">
+            <div className="container">
+              <div className="footer-inner">
+                <div className="row">
+                  <div className="col-lg-8">
+                    <div className="footer-content">
+                      <div className="logo-footer">
+                        <div className="row">
+                          <div className="col-lg-1">
+                            <img id="logo-footer" src="images/logo_pink_orig.png" alt="" />
+                          </div>
+                          <div className="col-lg-7">
+                            <h4 className="title logo-font text-default text-left">O.M Health <span className="text-muted"> & </span>Child Care</h4>
+                          </div>
+                        </div>
+                      </div>
                       <div className="row">
-                        <div className="col-lg-1">
-                          <img id="logo-footer" src="images/logo_pink_orig.png" alt="" />
+                        <div className="col-lg-6">
+                          <p>We have successfully managed nearly 10,000 patients in the past 3 years. We develop strong bonds with many of our patients and gain great satisfaction from seeing their happiness. Reach us at., </p>
+                          <ul className="list-icons">
+                            <li><i className="fa fa-map-marker pr-10 text-default"></i>Old No-31, New No-13, Kamaraj Salai, Anagaputhur, Chennai - 600 070</li>
+                            <li><i className="fa fa-phone pr-10 text-default"></i> +91 95516 25019, +91 94446 98388</li>
+                            <li><a href="mailto:omcarepammal@gmail.com"><i className="fa fa-envelope-o pr-10"></i>omcarepammal@gmail.com</a></li>
+                          </ul>
+                          <ul className="social-links circle animated-effect-1">
+                            <li className="twitter"><a href="https://twitter.com/omcarepammal"><i className="fa fa-twitter"></i></a></li>
+                            <li className="youtube"><a href="#"><i className="fa fa-youtube"></i></a></li>
+                            <li className="facebook"><a href="https://www.facebook.com/omcare.pammal"><i className="fa fa-facebook"></i></a></li>
+                          </ul>
                         </div>
-                        <div className="col-lg-7">
-                          <h4 className="title logo-font text-default text-left">O.M Health <span className="text-muted"> & </span>Child Care</h4>
+                        <div className="col-lg-6">
+                          <div id="map-canvas"></div>
                         </div>
-                      </div>
-                    </div>
-                    <div className="row">
-                      <div className="col-lg-6">
-                        <p>We have successfully managed nearly 10,000 patients in the past 3 years. We develop strong bonds with many of our patients and gain great satisfaction from seeing their happiness. Reach us at., </p>
-                        <ul className="list-icons">
-                          <li><i className="fa fa-map-marker pr-10 text-default"></i>Old No-31, New No-13, Kamaraj Salai, Anagaputhur, Chennai - 600 070</li>
-                          <li><i className="fa fa-phone pr-10 text-default"></i> +91 95516 25019, +91 94446 98388</li>
-                          <li><a href="mailto:email@domain.com"><i className="fa fa-envelope-o pr-10"></i>email@domain.com</a></li>
-                        </ul>
-                        <ul className="social-links circle animated-effect-1">
-                          <li className="twitter"><a href="#"><i className="fa fa-twitter"></i></a></li>
-                          <li className="googleplus"><a href="#"><i className="fa fa-google-plus"></i></a></li>
-                          <li className="youtube"><a href="#"><i className="fa fa-youtube"></i></a></li>
-                          <li className="facebook"><a href="#"><i className="fa fa-facebook"></i></a></li>
-                        </ul>
-                      </div>
-                      <div className="col-lg-6">
-                        <div id="map-canvas"></div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div className="col-lg-4">
-                  <div className="footer-content">
-                    <h2 className="title">Contact Us</h2>
-                    <br />
-                    <form className="margin-clear">
-                      <div className="form-group has-feedback">
-                        <label className="sr-only" htmlFor="name2">Name</label>
-                        <input type="text" className="form-control" id="name2" placeholder="Name" required="" />
-                        <i className="fa fa-user form-control-feedback"></i>
-                      </div>
-                      <div className="form-group has-feedback">
-                        <label className="sr-only" htmlFor="email2">Email address</label>
-                        <input type="email" className="form-control" id="email2" placeholder="Enter email" required="" />
-                        <i className="fa fa-envelope form-control-feedback"></i>
-                      </div>
-                      <div className="form-group has-feedback">
-                        <label className="sr-only" htmlFor="message2">Message</label>
-                        <textarea className="form-control" rows="6" id="message2" placeholder="Message" required=""></textarea>
-                        <i className="fa fa-pencil form-control-feedback"></i>
-                      </div>
-                      <input type="submit" value="Send" className="margin-clear submit-button btn btn-default" />
-                    </form>
+                  <div className="col-lg-4">
+                    <div className="footer-content">
+                      <h2 className="title">Contact Us</h2>
+                      <br />
+                      <form className="margin-clear">
+                        <div className="form-group has-feedback">
+                          <label className="sr-only" htmlFor="name2">Name</label>
+                          <input type="text" className="form-control" id="name2" placeholder="Name" required="" />
+                          <i className="fa fa-user form-control-feedback"></i>
+                        </div>
+                        <div className="form-group has-feedback">
+                          <label className="sr-only" htmlFor="email2">Email address</label>
+                          <input type="email" className="form-control" id="email2" placeholder="Enter email" required="" />
+                          <i className="fa fa-envelope form-control-feedback"></i>
+                        </div>
+                        <div className="form-group has-feedback">
+                          <label className="sr-only" htmlFor="message2">Message</label>
+                          <textarea className="form-control" rows="6" id="message2" placeholder="Message" required=""></textarea>
+                          <i className="fa fa-pencil form-control-feedback"></i>
+                        </div>
+                        <button type="button" value="Send" className="margin-clear submit-button btn btn-default btn-sm hidden-xs btn-animated">Send  <i className="pl-1 fa fa-send"></i></button>
+                      </form>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <div className="subfooter">
-          <div className="container">
-            <div className="subfooter-inner">
-              <div className="row">
-                <div className="col-md-12">
-                  <p className="text-center">Copyright © 2018. All rights reserved.</p>
+          <div className="subfooter">
+            <div className="container">
+              <div className="subfooter-inner">
+                <div className="row">
+                  <div className="col-md-12">
+                    <p className="text-center">Copyright © 2018. All rights reserved.</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
 
-      </footer>
+        </footer>
+      </section>
     )
   }
 };
@@ -874,7 +892,7 @@ class TeamSection extends React.Component {
       fontSize: '60%'
     };
     return (
-      <section className="clearfix">
+      <section className="clearfix" id="team-omc">
         <div className="container pv-20">
           <div className="row justify-content-lg-center">
             <div className="col-lg-10">
