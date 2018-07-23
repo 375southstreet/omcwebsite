@@ -70,7 +70,7 @@ class NavigationBar extends React.Component {
               </div>
               <div className="col-auto hidden-md-down pl-0 pl-md-1">
                 <div className="header-dropdown-buttons">
-                  <button href="#" className="btn btn-sm hidden-xs btn-default btn-animated" data-toggle="modal" data-target="#appointmentModal">Apointment <i className="fa fa-hospital-o pl-1"></i></button>
+                  <button className="btn btn-sm hidden-xs btn-default btn-animated" data-toggle="modal" data-target="#appointmentModal">Appointment <i className="fa fa-hospital-o pl-1"></i></button>
                 </div>
                 <div className="container">
                   <div className="modal fade" id="appointmentModal" role="dialog">
@@ -214,7 +214,7 @@ class AboutSection3 extends React.Component {
             <h3>Apointments</h3>
             <div className="separator clearfix"></div>
             <p>Consultation by appointment basis from Monday to Saturday in the evenings</p>
-            <a href="#" className="btn btn-default btn-animated btn-sm hidden-xs">Make An Apointment <i className="pl-1 fa fa-stethoscope"></i></a>
+            <button className="btn btn-sm hidden-xs btn-default btn-animated" data-toggle="modal" data-target="#appointmentModal">Make An Apointment <i className="pl-1 fa fa-stethoscope"></i></button>
           </div>
         </div>
         <div className="col-lg-4">
@@ -226,7 +226,7 @@ class AboutSection3 extends React.Component {
               <li style={listPaddingTopStyle1}><strong className="text-default">Monday - Saturday</strong> <span className="pull-right">6.30PM - 9PM</span></li>
               <li style={listPaddingTopStyle1}><strong className="text-default">Sunday</strong> <span className="pull-right">Holiday</span></li>
             </ul>
-            <a href="#" className="btn btn-default btn-sm hidden-xs btn-animated">Call Us <i className="pl-1 fa fa-phone"></i></a>
+            <a href="tel:+919551625019" className="btn btn-default btn-sm hidden-xs btn-animated">Call Us <i className="pl-1 fa fa-phone"></i></a>
           </div>
         </div>
       </div>
@@ -614,15 +614,17 @@ class NewsAndServicesSection extends React.Component {
                 <div className="media margin-clear">
                   <div className="d-flex pr-2">
                     <div className="overlay-container">
-                      <img className="media-object" src="images/medical-blog-thumb-1.jpg" alt="blog-thumb" />
-                      <a href="blog-post.html" className="overlay-link small"><i className="fa fa-link"></i></a>
+                      <img className="media-object" src="images/medical-blog-thumb-4.jpg" alt="blog-thumb" />
+                      <a href="http://www.immunizeindia.org/home" target="_blank" className="overlay-link small"><i className="fa fa-link"></i></a>
                     </div>
                   </div>
                   <div className="media-body">
-                    <h5 className="media-heading mb-2"><a href="blog-post.html">Lorem ipsum dolor sit amet</a></h5>
+                    <h5 className="media-heading mb-2"><a href="blog-post.html">Immunize India</a></h5>
                     <div className="row">
-                      <div className="col-lg-8">second line of news</div>
-                      <div className="col-lg-4 pull-right"><a href="#" className="btn btn-default btn-sm hidden-xs btn-animated">Read More<i className="fa fa-long-arrow-right pl-1"></i></a></div>
+                      <div className="col-lg-8">Ensure your child never misses a vaccination. Send a message to 566778 and Receive reminders now!</div>
+                      <div className="col-lg-4 pull-right">
+                        <a href="http://www.immunizeindia.org/home" target="_blank" className="btn btn-default btn-sm hidden-xs btn-animated">Click Here<i className="fa fa-long-arrow-right pl-1"></i></a>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -635,10 +637,10 @@ class NewsAndServicesSection extends React.Component {
                     </div>
                   </div>
                   <div className="media-body">
-                    <h5 className="media-heading mb-2"><a href="blog-post.html">Cum eligendi nisi rerum porro</a></h5>
+                    <h5 className="media-heading mb-2"><a href="http://www.tnhealth.org/dphfacts/dengue.htm">Frequently Asked Questions on Dengue</a></h5>
                     <div className="row">
-                      <div className="col-lg-8">second line of news</div>
-                      <div className="col-lg-4 pull-right"><a href="#" className="btn btn-default btn-sm hidden-xs btn-animated">Read More<i className="fa fa-long-arrow-right pl-1"></i></a></div>
+                      <div className="col-lg-8">Take a moment and read what our TamilNadu Govt says about Dengue</div>
+                      <div className="col-lg-4 pull-right"><a href="http://www.tnhealth.org/dphfacts/dengue.htm" target="_blank" className="btn btn-default btn-sm hidden-xs btn-animated">Read More<i className="fa fa-long-arrow-right pl-1"></i></a></div>
                     </div>
                   </div>
                 </div>
@@ -646,34 +648,19 @@ class NewsAndServicesSection extends React.Component {
                 <div className="media margin-clear">
                   <div className="d-flex pr-2">
                     <div className="overlay-container">
-                      <img className="media-object" src="images/medical-blog-thumb-3.jpg" alt="blog-thumb" />
-                      <a href="blog-post.html" className="overlay-link small"><i className="fa fa-link"></i></a>
+                      <img className="media-object" src="images/medical-blog-thumb-5.jpg" alt="blog-thumb" />
+                      <a href="https://twitter.com/omcarepammal" className="overlay-link small"><i className="fa fa-link"></i></a>
                     </div>
                   </div>
                   <div className="media-body">
-                    <h5 className="media-heading mb-2"><a href="blog-post.html">Cum eligendi nisi rerum porro</a></h5>
+                    <h5 className="media-heading mb-2"><a href="blog-post.html">Follow us on Twitter</a></h5>
                     <div className="row">
-                      <div className="col-lg-8">second line of news</div>
-                      <div className="col-lg-4 pull-right"><a href="#"  className="btn btn-default btn-sm hidden-xs btn-animated">Read More<i className="fa fa-long-arrow-right pl-1"></i></a></div>
+                      <div className="col-lg-8">Yes, we are in Twitter now. Follow us in twitter for more health tips!</div>
+                      <div className="col-lg-4 pull-right"><a href="https://twitter.com/omcarepammal"  className="btn btn-default btn-sm hidden-xs btn-animated">Read More<i className="fa fa-long-arrow-right pl-1"></i></a></div>
                     </div>
                   </div>
                 </div>
                 <hr />
-                <div className="media margin-clear">
-                  <div className="d-flex pr-2">
-                    <div className="overlay-container">
-                      <img className="media-object" src="images/medical-blog-thumb-3.jpg" alt="blog-thumb" />
-                      <a href="blog-post.html" className="overlay-link small"><i className="fa fa-link"></i></a>
-                    </div>
-                  </div>
-                  <div className="media-body">
-                    <h5 className="media-heading mb-2"><a href="blog-post.html">Cum eligendi nisi rerum porro</a></h5>
-                    <div className="row">
-                      <div className="col-lg-8">second line of news</div>
-                      <div className="col-lg-4 pull-right"><a href="#"  className="btn btn-default btn-sm hidden-xs btn-animated">Read More<i className="fa fa-long-arrow-right pl-1"></i></a></div>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
             <div className="col-lg-3">
@@ -690,7 +677,7 @@ class NewsAndServicesSection extends React.Component {
                   </div>
                   <div id="collapseOne-2" className="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
                     <div className="card-block bordered p-15">
-                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officiaasd. <a href="#">Read More<i className="fa fa-long-arrow-right pl-1"></i></a>
+                      Add more details or information or description<a href="#">Read More<i className="fa fa-long-arrow-right pl-1"></i></a>
                     </div>
                   </div>
                 </div>
@@ -704,7 +691,7 @@ class NewsAndServicesSection extends React.Component {
                   </div>
                   <div id="collapseTwo-2" className="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
                     <div className="card-block bordered p-15">
-                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officiaasd. <a href="#">Read More<i className="fa fa-long-arrow-right pl-1"></i></a>
+                      Add more details or information or description<a href="#">Read More<i className="fa fa-long-arrow-right pl-1"></i></a>
                     </div>
                   </div>
                 </div>
@@ -719,7 +706,7 @@ class NewsAndServicesSection extends React.Component {
 
                   <div id="collapseThree-2" className="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
                     <div className="card-block bordered p-15">
-                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officiaasd. <a href="#">Read More<i className="fa fa-long-arrow-right pl-1"></i></a>
+                      Add more details or information or description<a href="#">Read More<i className="fa fa-long-arrow-right pl-1"></i></a>
                     </div>
                   </div>
                 </div>
@@ -733,7 +720,7 @@ class NewsAndServicesSection extends React.Component {
                   </div>
                   <div id="collapseFour-2" className="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
                     <div className="card-block bordered p-15">
-                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officiaasd. <a href="#">Read More<i className="fa fa-long-arrow-right pl-1"></i></a>
+                      Add more details or information or description<a href="#">Read More<i className="fa fa-long-arrow-right pl-1"></i></a>
                     </div>
                   </div>
                 </div>
@@ -747,7 +734,7 @@ class NewsAndServicesSection extends React.Component {
                   </div>
                   <div id="collapseFive-2" className="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
                     <div className="card-block bordered p-15">
-                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officiaasd. <a href="#">Read More<i className="fa fa-long-arrow-right pl-1"></i></a>
+                      Add more details or information or description<a href="#">Read More<i className="fa fa-long-arrow-right pl-1"></i></a>
                     </div>
                   </div>
                 </div>
@@ -761,7 +748,7 @@ class NewsAndServicesSection extends React.Component {
                   </div>
                   <div id="collapseSix-2" className="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
                     <div className="card-block bordered p-15">
-                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officiaasd. <a href="#">Read More<i className="fa fa-long-arrow-right pl-1"></i></a>
+                      Add more details or information or description<a href="#">Read More<i className="fa fa-long-arrow-right pl-1"></i></a>
                     </div>
                   </div>
                 </div>
@@ -775,7 +762,7 @@ class NewsAndServicesSection extends React.Component {
                   </div>
                   <div id="collapseSeven-2" className="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
                     <div className="card-block bordered p-15">
-                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officiaasd. <a href="#">Read More<i className="fa fa-long-arrow-right pl-1"></i></a>
+                      Add more details or information or description<a href="#">Read More<i className="fa fa-long-arrow-right pl-1"></i></a>
                     </div>
                   </div>
                 </div>
