@@ -6990,7 +6990,7 @@ header .container-fluid .animated.main-navigation .dropdown-menu .show .dropdown
 .social-links .dropdown-menu {
   z-index: 103;
   padding: 5px;
-  min-width: 270px;
+  min-width: 150px;
   margin-top: 6px;
   font-size: 0;
   -webkit-box-shadow: none;
