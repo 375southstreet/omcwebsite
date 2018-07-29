@@ -174,13 +174,68 @@ class NotificationBarRight extends React.Component {
   }
 };
 
-class SliderBox extends React.Component {
-  render() {
-    return (
-      <div className="banner clearfix">
-        <div className="slideshow">
 
-          <img src="./images/medical-slider-slide-1.jpg" />
+class SliderBox extends React.Component {
+
+  render() {
+    var degreeStyle = {
+      fontSize: "50%"
+    };
+    return (
+      <div className="bd-example">
+        <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
+          <ol className="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+          </ol>
+          <div className="carousel-inner">
+            <div className="carousel-item active">
+              <img className="d-block w-100" src="./images/banner-1.jpg" alt="Banner One" />
+              <div className="carousel-caption">
+                <h1 className="bannerHeading">O.M. Child Care</h1>
+                <h3 className="bannerCaptionLevel1 animated fadeInUp">Dr. Sabarinath Mahadevan, <em className="bannerCaptionLevel2-1" style={degreeStyle}>M.B.B.S., M.D. in Paediatrics</em></h3>
+                <h3 className="bannerCaptionLevel2 animated fadeInUp">Child Specialist</h3>
+                <h3 className="bannerCaptionLevel3 animated fadeInUp">குழந்தை நல சிறப்பு மருத்துவர்</h3>
+              </div>
+            </div>
+            <div className="carousel-item">
+              <img className="d-block w-100 h-75" src="./images/banner-2.jpg" alt="Banner Two" />
+              <div className="carousel-caption">
+                <h1 className="bannerHeading">O.M Health Care</h1>
+                <h3 className="bannerCaptionLevel1 animated fadeInUp">Dr. Saranya Chinnadurai, <em className="bannerCaptionLevel2-1" style={degreeStyle}>M.B.B.S., M.D. in General Medicine, DM in Rheumatology</em></h3>
+                <h3 className="bannerCaptionLevel2 animated fadeInUp">Rheumatology and Muscle, Joint care Specialist</h3>
+                <h3 className="bannerCaptionLevel3 animated fadeInUp">வாதவியல் மற்றும் தசை, எலும்பு நல நிபுணர்</h3>
+              </div>
+            </div>
+            <div className="carousel-item">
+              <img className="d-block w-100 h-75" src="./images/banner-3.jpg" alt="Banner Three" />
+              <div className="carousel-caption">
+                <h1 className="bannerHeading">O.M. Child Care</h1>
+                <h3 className="bannerCaptionLevel1 animated fadeInUp">Dr. Sabarinath Mahadevan, <em className="bannerCaptionLevel2-1" style={degreeStyle}>M.B.B.S., M.D. in Paediatrics</em></h3>
+                <h3 className="bannerCaptionLevel2 animated fadeInUp">Child Specialist</h3>
+                <h3 className="bannerCaptionLevel3 animated fadeInUp">குழந்தை நல சிறப்பு மருத்துவர்</h3>
+              </div>
+            </div>
+            <div className="carousel-item">
+              <img className="d-block w-100" src="./images/banner-4.jpg" alt="Banner Four" />
+              <div className="carousel-caption">
+                <h1 className="bannerHeading">O.M Health Care</h1>
+                <h3 className="bannerCaptionLevel1 animated fadeInUp">Dr. Saranya Chinnadurai, <em className="bannerCaptionLevel2-1" style={degreeStyle}>M.B.B.S., M.D. in General Medicine, DM in Rheumatology</em></h3>
+                <h3 className="bannerCaptionLevel2 animated fadeInUp">Rheumatology and Muscle, Joint care Specialist</h3>
+                <h3 className="bannerCaptionLevel3 animated fadeInUp">வாதவியல் மற்றும் தசை, எலும்பு நல நிபுணர்</h3>
+              </div>
+            </div>
+          </div>
+          <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span className="sr-only">Previous</span>
+          </a>
+          <a className="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span className="carousel-control-next-icon" aria-hidden="true"></span>
+            <span className="sr-only">Next</span>
+          </a>
         </div>
 
       </div>
@@ -388,7 +443,7 @@ class AboutSection2Dot1 extends React.Component {
     };
     var bgImage = {
       backgroundPosition: '50% 15%',
-      backgroundImage: 'url(./images/background-image-1.png)'
+      backgroundImage: 'url(./images/banner-20.jpg)'
     };
     return (
       <section className="pv-40 dark-translucent-bg" style={bgImage} id="services-omc">
@@ -677,7 +732,8 @@ class NewsAndServicesSection extends React.Component {
                   </div>
                   <div id="collapseOne-2" className="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
                     <div className="card-block bordered p-15">
-                      Add more details or information or description<a href="#">Read More<i className="fa fa-long-arrow-right pl-1"></i></a>
+                      We provide outpatient services in clinic from Monday to Saturday at evenings 6-9pm. You may confirm your appointment by calling number 9551625019 between 5-6pm. You will be guided further regarding the exact time by our clinic manager. If you require vaccination, the same need to be informed through phone. In case you have any specific requirements like counseling or special testing, the same need to be informed over phone. It would be more useful and informative, if you could bring the old consultation records or other medical records from any other Centre.
+                      <a href="#">Read More<i className="fa fa-long-arrow-right pl-1"></i></a>
                     </div>
                   </div>
                 </div>
@@ -691,7 +747,7 @@ class NewsAndServicesSection extends React.Component {
                   </div>
                   <div id="collapseTwo-2" className="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
                     <div className="card-block bordered p-15">
-                      Add more details or information or description<a href="#">Read More<i className="fa fa-long-arrow-right pl-1"></i></a>
+                      We also provide inpatient services in the hospitals nearby, depending upon your health condition and needs. Inpatient services shall be covered under insurance, if required. We also encourage opinions from consultants of other specialty, if required. Blood investigations and imaging shall be done, wherever essential.<a href="#">Read More<i className="fa fa-long-arrow-right pl-1"></i></a>
                     </div>
                   </div>
                 </div>
@@ -728,7 +784,7 @@ class NewsAndServicesSection extends React.Component {
                   <div className="card-header" role="tab" id="headingFive">
                     <h4 className="mb-0">
                       <a data-toggle="collapse" data-parent="#accordion-1" href="#collapseFive-2" className="collapsed" aria-expanded="false" aria-controls="collapseFive-2">
-                        <i className="fa-road fa pr-10"></i>Lab Services
+                        <i className="fa-flask fa pr-10"></i>Lab Services
                       </a>
                     </h4>
                   </div>

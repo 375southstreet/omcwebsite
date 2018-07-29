@@ -45,36 +45,37 @@
 
 			function bannerHeadingAnimation(){
 				$('.bannerHeading').hide()
-				var caption = carouselContainer.find('.active').find('.bannerHeading').addClass('animated zoomIn').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+				var caption = carouselContainer.find('.active').find('.bannerHeading').addClass('animated fadeInRight').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
 					function (){
-					$(this).removeClass('animated zoomIn')});
+					$(this).removeClass('animated fadeInRight')});
 			caption.slideToggle();
 			}
 
 			function bannerCaptionLevel1Animation(){
 				$('.bannerCaptionLevel1').hide();
+				console.log($('.bannerCaptionLevel1').hide());
+				console.log('First');
 				var caption = carouselContainer.find('.active').find('.bannerCaptionLevel1').addClass('animated fadeInUp').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
 					function (){
-						// alert('Hello');
 						$(this).removeClass('animated fadeInUp')
 					});
+					console.log('Second');
+					console.log($('.bannerCaptionLevel1').hide());
 					caption.slideToggle();
 			}
 			function bannerCaptionLevel2Animation(){
 				$('.bannerCaptionLevel2').hide();
+				$('.bannerCaptionLevel2-1').hide();
 				var caption = carouselContainer.find('.active').find('.bannerCaptionLevel2').addClass('animated fadeInUp').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
 					function (){
 						$(this).removeClass('animated fadeInUp')
 					});
 				caption.slideToggle();
-			}
-			function bannerCaptionLevel21Animation(){
-				$('.bannerCaptionLevel2-1').hide();
-				var caption = carouselContainer.find('.active').find('.bannerCaptionLevel2-1').addClass('animated fadeInUp').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+				var caption1 = carouselContainer.find('.active').find('.bannerCaptionLevel2-1').addClass('animated fadeInUp').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
 					function (){
 						$(this).removeClass('animated fadeInUp')
 					});
-				caption.slideToggle();
+				caption1.slideToggle();
 			}
 			function bannerCaptionLevel3Animation(){
 				$('.bannerCaptionLevel3').hide();
@@ -94,8 +95,10 @@
 			}
 		carouselContainer.carousel({
 		interval: slideInterval, cycle: true, pause: "hover"})
-		.on('slide.bs.carousel slid.bs.carousel', bannerHeadingAnimation).trigger('slide.bs.carousel');
-
+		.on('slide.bs.carousel slid.bs.carousel', bannerHeadingAnimation).trigger('slide.bs.carousel')
+		.on('slide.bs.carousel slid.bs.carousel', bannerCaptionLevel1Animation).trigger('slide.bs.carousel')
+		.on('slide.bs.carousel slid.bs.carousel', bannerCaptionLevel2Animation).trigger('slide.bs.carousel')
+		.on('slide.bs.carousel slid.bs.carousel', bannerCaptionLevel3Animation).trigger('slide.bs.carousel');
 
 	}); // End document ready
 
