@@ -457,7 +457,7 @@ class AboutSection2Dot1 extends React.Component {
                   <h3 className="logo-font mt-4"><span className="text-default">O.M Childcare</span> Services</h3>
                   <p>Content for childcare. Provide some description here, add more details and information, what else?</p>
                   <div className="separator-3"></div>
-                  <ul className="list-icons">
+                  <ul className="list-icons animate flipInX">
                     <li>Vaccination<i className="fa fa-check-square-o"></i></li>
                     <li>Child specialist<i className="fa fa-check-square-o"></i></li>
                     <li>Adolescent care (12-18 yrs)<i className="fa fa-check-square-o"></i></li>
@@ -869,7 +869,9 @@ class FooterMain extends React.Component {
                           </ul>
                         </div>
                         <div className="col-lg-6">
-                          <div id="map-canvas"></div>
+                          <div id="map-canvas">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1502.6970323256414!2d80.12933696646816!3d12.97760892235142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525f0d0736998d%3A0xf45c57155d260f67!2sO.M+Child+%26+Health+Care+Clinic!5e0!3m2!1sen!2sau!4v1533733263509" height="300" frameborder="0" allowfullscreen></iframe>
+                          </div>
                         </div>
                       </div>
                     </div>
