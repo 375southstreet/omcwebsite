@@ -160,20 +160,50 @@ class NotificationBarLeft extends React.Component {
 class NotificationBarRight extends React.Component {
   render(){
     return(
-      <div className="col-8 col-md-7">
-        <div id="header-top-second" className="clearfix text-right">
-          <ul className="list-inline">
-            <li className="list-inline-item hidden-md-down"><a className="link-light" href="#"><i className="fa fa-user-md pr-1"></i>Find a Doctor</a></li>
-            <li className="list-inline-item hidden-md-down"><a className="link-light" href="#"><i className="fa fa-flask pr-1"></i>Researches</a></li>
-            <li className="list-inline-item"><a className="link-light" href="#"><i className="fa fa-info-circle pr-1"></i>Information</a></li>
-            <li className="list-inline-item"><a className="link-light" href="tel:+919551625019"><i className="fa fa-phone pr-1"></i><strong>Call Us</strong></a></li>
-          </ul>
+        <div className="col-8 col-md-7">
+          <div id="header-top-second" className="clearfix text-right">
+            <ul className="list-inline">
+              <li className="list-inline-item"><a className="link-light" href="#" data-toggle="modal" data-target="#informationModal"><i className="fa fa-info-circle pr-1"></i>Information</a></li>
+              <li className="list-inline-item"><a className="link-light" href="tel:+919551625019"><i className="fa fa-phone pr-1"></i><strong>Call Us</strong></a></li>
+            </ul>
+          </div>
+          <div className="modal fade" id="informationModal" role="dialog">
+            <div className="modal-dialog">
+              <div className="modal-content">
+                <div className="modal-header">
+                  <h4 className="modal-title">Information</h4>
+                  <button type="button" className="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div className="modal-body">
+                  <h4>Save yourself from Dengue.</h4>
+
+                  <h5>Prevention </h5>
+                  <p>Exclusion from childcare, preschool, school or work is usually not necessary but people experiencing fever from dengue infection should not be in an environment where they may be bitten by mosquitoes. If this is not possible they should stay at home until they have no fever and are therefore no longer infectious (usually 3 to 5 days). There is no vaccine to prevent human infection by this virus.
+                  Personal protection and the environmental management of mosquitoes are important in preventing illness. Prevent access of mosquitoes to an infected person with a fever.
+                  Protect yourself from mosquito bites at all times in dengue areas. Wear long sleeved protective clothing, long pants, socks and shoes when in mosquito infested areas
+                  Use mosquito repellents, coils and chemicals Ensure you do not create mosquito breeding habitats such as old automobile tires, coconut shells,plastic bottles, open pots around your homes <br />
+                  Consult your doctor if you have <br /></p>
+                  <ul>
+                    <li> High Fever (106F or 41C)</li>
+                    <li> Pain behind the eyes</li>
+                    <li> Headaches</li>
+                    <li> Bone, Muscle, and joint pain</li>
+                    <li> Rash all over the body</li>
+                    <li> Minor bleeding from gums or nose</li>
+                    <li> Vomiting and nausea</li>
+                  </ul>
+                </div>
+                <div className="modal-footer">
+                  <button type="button" className="btn btn-sm hidden-xs btn-default btn-animated" data-dismiss="modal">Close <i className="pl-1 fa fa-close"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
-      </div>
     )
   }
 };
-
 
 class SliderBox extends React.Component {
 
@@ -206,7 +236,8 @@ class SliderBox extends React.Component {
                 <h1 className="bannerHeading">O.M Health Care</h1>
                 <h3 className="bannerCaptionLevel1 animated fadeInUp">Dr. Saranya Chinnadurai, <em className="bannerCaptionLevel2-1" style={degreeStyle}>M.B.B.S., M.D. in General Medicine, DM in Rheumatology</em></h3>
                 <h3 className="bannerCaptionLevel2 animated fadeInUp">Rheumatology and Muscle, Joint care Specialist</h3>
-                <h3 className="bannerCaptionLevel3 animated fadeInUp">வாதவியல் மற்றும் தசை, எலும்பு நல நிபுணர்</h3>
+                <h3 className="bannerCaptionLevel3 animated fadeInUp">இரத்த அழுத்தம், சர்க்கரை நோய் சிறப்பு மருத்துவர்</h3>
+                <h3 className="bannerCaptionLevel3 animated fadeInUp">மூட்டு தசை இணைப்புத்திசு நோயிகளியல் துறை நிபுணர்</h3>
               </div>
             </div>
             <div className="carousel-item">
@@ -224,7 +255,8 @@ class SliderBox extends React.Component {
                 <h1 className="bannerHeading">O.M Health Care</h1>
                 <h3 className="bannerCaptionLevel1 animated fadeInUp">Dr. Saranya Chinnadurai, <em className="bannerCaptionLevel2-1" style={degreeStyle}>M.B.B.S., M.D. in General Medicine, DM in Rheumatology</em></h3>
                 <h3 className="bannerCaptionLevel2 animated fadeInUp">Rheumatology and Muscle, Joint care Specialist</h3>
-                <h3 className="bannerCaptionLevel3 animated fadeInUp">வாதவியல் மற்றும் தசை, எலும்பு நல நிபுணர்</h3>
+                <h3 className="bannerCaptionLevel3 animated fadeInUp">இரத்த அழுத்தம், சர்க்கரை நோய் சிறப்பு மருத்துவர்</h3>
+                <h3 className="bannerCaptionLevel3 animated fadeInUp">மூட்டு தசை இணைப்புத்திசு நோயிகளியல் துறை நிபுணர்</h3>
               </div>
             </div>
           </div>
@@ -289,55 +321,6 @@ class AboutSection3 extends React.Component {
   }
 };
 
-class AboutSection4 extends React.Component {
-  render() {
-    return (
-      <div className="row grid-space-10">
-        <div className="col-md-6 col-lg-3">
-          <div className="pv-30 ph-20 white-bg feature-box bordered text-center">
-            <span className="icon default-bg circle"><i className="fa fa-plus-square"></i></span>
-            <h3>Since 2014</h3>
-            <div className="separator clearfix"></div>
-            <p>We provide modern scientific medicine with individualized care since 2014.</p>
-            <a href="#" className="btn btn-default btn-animated btn-sm hidden-xs">Read More <i className="fa fa-angle-double-right"></i></a>
-          </div>
-        </div>
-        <div className="col-md-6 col-lg-3">
-          <div className="pv-30 ph-20 white-bg feature-box bordered text-center">
-            <span className="icon default-bg circle"><i className="fa fa-hospital-o"></i></span>
-            <h3>Apointments</h3>
-            <div className="separator clearfix"></div>
-            <p>Consultation by appointment basis from Monday to Saturday in the evenings.</p>
-            <a href="#" className="btn btn-default btn-animated">Make An Apointment <i className="pl-1 fa fa-stethoscope"></i></a>
-          </div>
-        </div>
-        <div className="col-md-6 col-lg-3">
-          <div className="pv-30 ph-20 default-bg feature-box bordered text-center">
-            <span className="icon dark-bg circle"><i className="fa fa-phone"></i></span>
-            <h3>Lorem Ipsum</h3>
-            <div className="separator clearfix"></div>
-            <p>Inventore dolores aut laboriosam cum consequuntur delectus sequi lorem ipsum dolor sit amet</p>
-            <a href="#" className="btn btn-default btn-animated">Lets talk <i className="pl-1 fa fa-phone"></i></a>
-          </div>
-        </div>
-        <div className="col-md-6 col-lg-3">
-          <div className="pv-30 ph-20 white-bg feature-box bordered text-center">
-            <span className="icon default-bg circle"><i className="fa fa-clock-o"></i></span>
-            <h3>Opening Hours</h3>
-            <div className="separator-2 mt-20 clearfix"></div>
-            <ul className="list-unstyled small list-icons text-left">
-              <li><strong className="text-default">Monday - Saturday</strong> <span className="pull-right">6.30PM - 9PM</span></li>
-              <li><strong className="text-default">Sunday</strong> <span className="pull-right">Holiday</span></li>
-            </ul>
-            <div className="separator-3 mt-20 clearfix"></div>
-            <p className="small text-default">Lorem ipsum dolor sit amet, consectetur.</p>
-          </div>
-        </div>
-      </div>
-    )
-  }
-};
-
 class AboutSection extends React.Component {
   render() {
     return (
@@ -354,87 +337,6 @@ class AboutSection extends React.Component {
     )
   }
 };
-
-class FindDoctor extends React.Component {
-  render(){
-    return(
-      <section className="section dark-bg clearfix">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-12">
-              <div className="call-to-action text-center">
-                <div className="row">
-                  <div className="col-md-8">
-                    <h1 className="title"><i className="fa fa-user-md pr-10"></i>Find A Doctor</h1>
-                    <ul className="list-inline">
-                      <li className="list-inline-item"><i className="fa fa-circle text-default"></i> <a href="#" className="link-light">Rheumatologists&lrm;</a></li>
-                      <li className="list-inline-item"><i className="fa fa-circle text-default"></i> <a href="#" className="link-light">Pediatrics&lrm;</a></li>
-                      <li className="list-inline-item"><i className="fa fa-circle text-default"></i> <a href="#" className="link-light">Diabetologists&lrm;</a></li>
-                      <li className="list-inline-item"><i className="fa fa-circle text-default"></i> <a href="#" className="link-light">General Physicians&lrm;</a></li>
-                    </ul>
-                  </div>
-                  <div className="col-md-4">
-                    <br />
-                    <p><a href="#" className="btn btn-lg btn-default btn-animated">More Specialties<i className="fa fa-search pl-20"></i></a></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    )
-  }
-};
-
-class AboutSection2 extends React.Component {
-
-  render(){
-    var divStyle = {
-      marginTop: '-131.191px'
-    };
-    return (
-      <section className="full-width-section">
-        <div className="full-image-container light-gray-bg">
-          <img className="to-right-block" src="images/medical-section-image-1.jpg" alt="" />
-          <div className="full-image-overlay text-right" style={divStyle}>
-            <h3 className="mt-4">With Compassionate Care Since 2014</h3>
-            <ul className="list-icons">
-              <li>Unt in culpa qui deserunt <i className="fa fa-check-square-o"></i></li>
-              <li>Elegant Design <i className="fa fa-check-square-o"></i></li>
-              <li>ipsam asperiores fugiat quo <i className="fa fa-check-square-o"></i></li>
-              <li>Animi veniam veritatis sint <i className="fa fa-check-square-o"></i></li>
-              <li>Voluptatum officia suscipit <i className="fa fa-check-square-o"></i></li>
-              <li>Labore et dolore magna aliqua <i className="fa fa-check-square-o"></i></li>
-            </ul>
-          </div>
-        </div>
-        <div className="full-text-container light-gray-bg">
-          <h3 className="logo-font mt-4"><span className="text-muted">About</span> <span className="text-default">O.M Childcare</span></h3>
-          <div className="separator-2 hidden-lg-down"></div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi veniam, veritatis sint consequuntur! Natus, culpa, explicabo! Non quo laboriosam nobis quia, amet excepturi optio dolor impedit. Perferendis libero unde, nulla deserunt sequi. Voluptatum, officia suscipit porro reprehenderit vitae quo rem reiciendis, a vero quae. Vero beatae voluptatum.</p>
-          <div className="separator-3 hidden-lg-down"></div>
-        </div>
-        <div className="full-text-container light-gray-bg">
-          <h3 className="logo-font mt-4"><span className="text-muted">About</span> <span className="text-default">O.M Healthcare</span></h3>
-          <div className="separator-2 hidden-lg-down"></div>
-          <p>
-          Content under adult health
-1. Rheumatology-Rheumatoid arthritis & SLE
-2. Joint pain
-3. Back pain
-4. Musculoskeletal pain
-5 Diabetes
-6. Hypertension
-7.Respiratory problems
-          </p>
-          <div className="separator-3 hidden-lg-down"></div>
-        </div>
-      </section>
-    )
-  }
-};
-
 
 class AboutSection2Dot1 extends React.Component {
   render() {
@@ -458,8 +360,8 @@ class AboutSection2Dot1 extends React.Component {
                   <p>Content for childcare. Provide some description here, add more details and information, what else?</p>
                   <div className="separator-3"></div>
                   <ul className="list-icons animate flipInX">
-                    <li>Vaccination<i className="fa fa-check-square-o"></i></li>
                     <li>Child specialist<i className="fa fa-check-square-o"></i></li>
+                    <li>Vaccination<i className="fa fa-check-square-o"></i></li>
                     <li>Adolescent care (12-18 yrs)<i className="fa fa-check-square-o"></i></li>
                     <li>Child development screening<i className="fa fa-check-square-o"></i></li>
                     <li>Newborn care (upto 1 month of life)<i className="fa fa-check-square-o"></i></li>
@@ -477,12 +379,12 @@ class AboutSection2Dot1 extends React.Component {
                   <p>Content for childcare. Provide some description here, add more details and information, what else?</p>
                   <div className="separator-2"></div>
                   <ul className="list-icons">
+                    <li><i className="fa fa-check-square-o"></i>Rheumatology-Rheumatoid arthritis & SLE</li>
                     <li><i className="fa fa-check-square-o"></i>Diabetes</li>
                     <li><i className="fa fa-check-square-o"></i>Hypertension</li>
                     <li><i className="fa fa-check-square-o"></i>Back & Joint pain</li>
                     <li><i className="fa fa-check-square-o"></i>Musculoskeletal pain</li>
                     <li><i className="fa fa-check-square-o"></i>Respiratory problems</li>
-                    <li><i className="fa fa-check-square-o"></i>Rheumatology-Rheumatoid arthritis & SLE</li>
                   </ul>
                 </div>
               </div>
@@ -733,7 +635,6 @@ class NewsAndServicesSection extends React.Component {
                   <div id="collapseOne-2" className="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
                     <div className="card-block bordered p-15">
                       We provide outpatient services in clinic from Monday to Saturday at evenings 6-9pm. You may confirm your appointment by calling number 9551625019 between 5-6pm. You will be guided further regarding the exact time by our clinic manager. If you require vaccination, the same need to be informed through phone. In case you have any specific requirements like counseling or special testing, the same need to be informed over phone. It would be more useful and informative, if you could bring the old consultation records or other medical records from any other Centre.
-                      <a href="#">Read More<i className="fa fa-long-arrow-right pl-1"></i></a>
                     </div>
                   </div>
                 </div>
@@ -747,7 +648,7 @@ class NewsAndServicesSection extends React.Component {
                   </div>
                   <div id="collapseTwo-2" className="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
                     <div className="card-block bordered p-15">
-                      We also provide inpatient services in the hospitals nearby, depending upon your health condition and needs. Inpatient services shall be covered under insurance, if required. We also encourage opinions from consultants of other specialty, if required. Blood investigations and imaging shall be done, wherever essential.<a href="#">Read More<i className="fa fa-long-arrow-right pl-1"></i></a>
+                      We also provide inpatient services in the hospitals nearby, depending upon your health condition and needs. We also encourage opinions from consultants of other specialty, if required. Blood investigations and imaging shall be done, wherever essential.  Inpatient services shall be covered under insurance, if required.
                     </div>
                   </div>
                 </div>
@@ -762,7 +663,7 @@ class NewsAndServicesSection extends React.Component {
 
                   <div id="collapseThree-2" className="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
                     <div className="card-block bordered p-15">
-                      Add more details or information or description<a href="#">Read More<i className="fa fa-long-arrow-right pl-1"></i></a>
+                      We provide vaccination across all age groups. We follow guidelines from Indian academy of pediatrics and national government guidelines for Immunisation.<a href="http://www.acvip.org/parents/">Visit ACVIP for more details<i className="fa fa-long-arrow-right pl-1"></i></a>
                     </div>
                   </div>
                 </div>
@@ -776,7 +677,7 @@ class NewsAndServicesSection extends React.Component {
                   </div>
                   <div id="collapseFour-2" className="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
                     <div className="card-block bordered p-15">
-                      Add more details or information or description<a href="#">Read More<i className="fa fa-long-arrow-right pl-1"></i></a>
+                      We provide consultation for patient ailments as well provide master health checkup for adults and routine health checkup for children.
                     </div>
                   </div>
                 </div>
@@ -790,7 +691,21 @@ class NewsAndServicesSection extends React.Component {
                   </div>
                   <div id="collapseFive-2" className="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
                     <div className="card-block bordered p-15">
-                      Add more details or information or description<a href="#">Read More<i className="fa fa-long-arrow-right pl-1"></i></a>
+                      Facilities available,
+                      <ul>
+                        <li>Bood Sugar Testing</li>
+                        <li>Lipid Profile (Cholesterol)</li>
+                        <li>Complete Blood Count</li>
+                        <li>Urine Routine </li>
+                        <li>Blood Culture </li>
+                        <li>Urine Culture </li>
+                        <li>CRP</li>
+                        <li>Thyroid Function Test</li>
+                        <li>Liver Function Test</li>
+                        <li>Renal Function Test </li>
+                        <li>PEFR Testing (Asthma) </li>
+                      </ul>
+
                     </div>
                   </div>
                 </div>
@@ -870,7 +785,7 @@ class FooterMain extends React.Component {
                         </div>
                         <div className="col-lg-6">
                           <div id="map-canvas">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1502.6970323256414!2d80.12933696646816!3d12.97760892235142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525f0d0736998d%3A0xf45c57155d260f67!2sO.M+Child+%26+Health+Care+Clinic!5e0!3m2!1sen!2sau!4v1533733263509" height="300" frameborder="0" allowfullscreen></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1502.6970323256414!2d80.12933696646816!3d12.97760892235142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525f0d0736998d%3A0xf45c57155d260f67!2sO.M+Child+%26+Health+Care+Clinic!5e0!3m2!1sen!2sau!4v1533733263509" height="300" frameBorder="0" allowFullScreen></iframe>
                           </div>
                         </div>
                       </div>
@@ -952,12 +867,28 @@ class TeamSection extends React.Component {
             <div className="image-box team-member shadow mb-20">
               <div className="overlay-container overlay-visible">
                 <img src="images/doctor-2.svg" alt="" />
-                <a href="#" className="overlay-link" title="Dr.M.Sabarinath, MBBS, MD (Paediatrics)"><i className="fa fa-link"></i></a>
+                <a href="#" className="overlay-link" title="Dr.M.Sabarinath, MBBS, MD (Paediatrics)"  data-toggle="modal" data-target="#teamMemberOneModal"><i className="fa fa-link"></i></a>
                 <div className="overlay-bottom">
                   <div className="text">
                     <h3>Dr.M.Sabarinath, <br /><em className="small" style={teamStyle3}>MBBS,MD (PAED)</em></h3>
                     <div className="separator light"></div>
                     <p className="medium margin-clear"><em>Child Specialist</em></p>
+                  </div>
+                </div>
+                <div className="modal fade" id="teamMemberOneModal" role="dialog">
+                  <div className="modal-dialog">
+                    <div className="modal-content">
+                      <div className="modal-header">
+                        <h4 className="modal-title">Sabarinath Mahadevan</h4>
+                        <button type="button" className="close" data-dismiss="modal">&times;</button>
+                      </div>
+                      <div className="modal-body">
+                        <p>Details about Team Member, to be added</p>
+                      </div>
+                      <div className="modal-footer">
+                        <button type="button" className="btn btn-sm hidden-xs btn-default btn-animated" data-dismiss="modal">Close <i className="pl-1 fa fa-close"></i></button>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -967,7 +898,7 @@ class TeamSection extends React.Component {
             <div className="image-box team-member shadow mb-20">
               <div className="overlay-container overlay-visible">
                 <img src="images/doctor-1.svg" alt="" />
-                <a href="#" className="overlay-link" title="Dr.C.Saranya, MBBS, MD (General Medicine), DM (Rheumatology) "><i className="fa fa-link"></i></a>
+                <a href="#" className="overlay-link" title="Dr.C.Saranya, MBBS, MD (General Medicine), DM (Rheumatology)" data-toggle="modal" data-target="#teamMemberTwoModal"><i className="fa fa-link"></i></a>
                 <div className="overlay-bottom">
                   <div className="text">
                     <h3 className="title">Dr.C.Saranya, <br/><em className="small" style={teamStyle3}>MBBS, MD (Gen Med)</em></h3>
@@ -977,6 +908,23 @@ class TeamSection extends React.Component {
                     </p>
                   </div>
                 </div>
+                <div className="modal fade" id="teamMemberTwoModal" role="dialog">
+                  <div className="modal-dialog">
+                    <div className="modal-content">
+                      <div className="modal-header">
+                        <h4 className="modal-title">Saranya Chinnadurai</h4>
+                        <button type="button" className="close" data-dismiss="modal">&times;</button>
+                      </div>
+                      <div className="modal-body">
+                        <p>Details about Team Member, to be added</p>
+                      </div>
+                      <div className="modal-footer">
+                        <button type="button" className="btn btn-sm hidden-xs btn-default btn-animated" data-dismiss="modal">Close <i className="pl-1 fa fa-close"></i></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
               </div>
             </div>
           </div>
@@ -984,7 +932,7 @@ class TeamSection extends React.Component {
             <div className="image-box team-member shadow mb-20">
               <div className="overlay-container overlay-visible">
                 <img src="images/manager.svg" alt="" />
-                <a href="#" className="overlay-link" title="Clinic Manager"><i className="fa fa-link"></i></a>
+                <a href="#" className="overlay-link" title="Clinic Manager"  data-toggle="modal" data-target="#teamMemberThreeModal"><i className="fa fa-link"></i></a>
                 <div className="overlay-bottom">
                   <div className="text">
                     <h3 className="title">V.Mahadevan, <br/><em className="small" style={teamStyle3}>Clinic Manager</em></h3>
@@ -992,6 +940,24 @@ class TeamSection extends React.Component {
                     <p className="medium margin-clear"><em> Clinic Manager</em></p>
                   </div>
                 </div>
+
+                <div className="modal fade" id="teamMemberThreeModal" role="dialog">
+                  <div className="modal-dialog">
+                    <div className="modal-content">
+                      <div className="modal-header">
+                        <h4 className="modal-title">Mahadevan Velappan</h4>
+                        <button type="button" className="close" data-dismiss="modal">&times;</button>
+                      </div>
+                      <div className="modal-body">
+                        <p>Details about Team Member, to be added</p>
+                      </div>
+                      <div className="modal-footer">
+                        <button type="button" className="btn btn-sm hidden-xs btn-default btn-animated" data-dismiss="modal">Close <i className="pl-1 fa fa-close"></i></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
               </div>
             </div>
           </div>
