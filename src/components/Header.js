@@ -883,7 +883,23 @@ class TeamSection extends React.Component {
                         <button type="button" className="close" data-dismiss="modal">&times;</button>
                       </div>
                       <div className="modal-body">
-                        <p>Details about Team Member, to be added</p>
+                        <div className="row">
+                          <div className="col-lg-3 col-md-3">
+                            <img src="images/doctor-2.svg" alt="" />
+                          </div>
+                          <div className="col-lg-9 col-md-9">
+                              <h3>Dr. Sabarinath Mahadevan</h3>
+                              <em>MBBS., MD (Paed)</em><br/>
+                              <span>Reg.No. 89974</span><br/>
+                              <span>Child Specialist, குழந்தை நல சிறப்பு மருத்துவர்</span>
+                          </div>
+                        </div>
+                        <br />
+                        <p><b>Sabarinath Mahadevan</b>, Child Specialist has been in paediatric practice for more than <span className="text-default">x years</span> with particular interests in Child Vaccination, Adolscent care, Child Development screening, Newborn care (upto 1 month of life), Allergy, Asthma, Respiratory Problems. </p>
+                        <p>Sabarinath is a enthusiastic paediatrician, who was graduated from <span className="text-default">college name</span>. He is also a proud father of 3 year old beautiful daughter and therefore he understands the importance of good paediatric care.</p>
+                        <p>Along side private consulting at Pammal and Pallavaram, Sabarinath also works at the <span className="text-default"> Govt Medical College at Chengalpet</span>. He also teaches within the Paediatrics department in Chengalpet Govt Medical College.</p>
+                        <h4>Languages Spoken</h4>
+                        <p>Tamil, English, Hindi</p>
                       </div>
                       <div className="modal-footer">
                         <button type="button" className="btn btn-sm hidden-xs btn-default btn-animated" data-dismiss="modal">Close <i className="pl-1 fa fa-close"></i></button>
@@ -916,7 +932,22 @@ class TeamSection extends React.Component {
                         <button type="button" className="close" data-dismiss="modal">&times;</button>
                       </div>
                       <div className="modal-body">
-                        <p>Details about Team Member, to be added</p>
+                        <div className="row">
+                          <div className="col-lg-3 col-md-3">
+                            <img src="images/doctor-1.svg" alt="" />
+                          </div>
+                          <div className="col-lg-9 col-md-9">
+                            <h3>Dr. Saranya Chinnadurai</h3>
+                            <em>MBBS., MD (Internal Medicine), DM (Rheumatology)</em> <br/>
+                            <span>Reg.No. 89970</span> <br/>
+                            <span>இரத்த அழுத்தம், சர்க்கரை நோய் சிறப்பு மருத்துவர், மூட்டு தசை இணைப்புத்திசு நோயிகளியல் துறை நிபுணர்</span>
+                          </div>
+                        </div>
+                        <br />
+                        <p><b>Saranya Chinnadurai</b>, who has graduated as Rheumatologist from <span className="text-default">college name</span>. She is also one of the very few female Rheumatologist in Pammal, Pallavaram and the Surrounding places. </p>
+                        <p>Saranya has vast experience in General Medicine, Muscle-Joint care, who also continues to be active in teaching and research. </p>
+                        <h4>Languages Spoken</h4>
+                        <p>Tamil, English, Hindi</p>
                       </div>
                       <div className="modal-footer">
                         <button type="button" className="btn btn-sm hidden-xs btn-default btn-animated" data-dismiss="modal">Close <i className="pl-1 fa fa-close"></i></button>
@@ -948,9 +979,25 @@ class TeamSection extends React.Component {
                         <h4 className="modal-title">Mahadevan Velappan</h4>
                         <button type="button" className="close" data-dismiss="modal">&times;</button>
                       </div>
+
                       <div className="modal-body">
-                        <p>Details about Team Member, to be added</p>
+                        <div className="row">
+                          <div className="col-lg-3 col-md-3">
+                            <img src="images/manager.svg" alt="" />
+                          </div>
+                          <div className="col-lg-9 col-md-9">
+                            <h3>Mr. Mahadevan Velappan</h3>
+                            <em>Retd <span className="text-default">Role officer from Hospital/College Name</span></em> <br/>
+                          </div>
+                        </div>
+                        <br />
+                        <p><b>Mahadevan Velappan</b> has vast experience in medical related fields. He has served as role in various medical colleges</p>
+                        <p>He solely manages OMCare Clinic and support our doctors with all facilities. He is an easily approachable person, who welcomes you with a smiling face and he is also the same person who picks your appointment calls. With his great experience, his hospitality service is a great asset to OMCare.</p>
+                        <h4>Languages Spoken</h4>
+                        <p>Tamil, English</p>
                       </div>
+
+
                       <div className="modal-footer">
                         <button type="button" className="btn btn-sm hidden-xs btn-default btn-animated" data-dismiss="modal">Close <i className="pl-1 fa fa-close"></i></button>
                       </div>
