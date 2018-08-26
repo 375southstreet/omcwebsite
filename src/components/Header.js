@@ -82,7 +82,7 @@ class NavigationBar extends React.Component {
                           <button type="button" className="close" data-dismiss="modal">&times;</button>
                         </div>
                         <div className="modal-body">
-                          <p>Please call us for Appointments between 6:30PM to 9PM on Monday to Saturday</p>
+                          <p>Please call us between 10:00 AM - 11:00 AM and 4:00 PM - 5:00 PM Monday to Saturday to book your appointment. Appointment will be given between 6:30 PM to 9:00 PM</p>
                           <a href="tel:+919551625019" className="btn btn-sm hidden-xs btn-default btn-animated">Call Us <i className="pl-1 fa fa-phone"></i></a>
                         </div>
                         <div className="modal-footer">
@@ -329,7 +329,7 @@ class AboutSection extends React.Component {
         <br />
           <h3 className="title logo-font text-center text-default">O.M Child &nbsp;<span className="text-muted">and</span>&nbsp; Health Care</h3>
           <div className="separator"></div>
-          <p className="text-center"><span className="text-default">O.M Child</span> & <span className="text-default">Health Care</span> clinic was opened in 2014, since then we are providing holistic care in the field of child health, vaccination, joint pain, back pain, musculoskeletal pain, Rheumatological problems, diabetes, hypertension, cardio respiratory problems <br /> We have successfully managed nearly 10000 patients in the past 3 years.</p>
+          <p className="text-center"><span className="text-default">O.M Child</span> & <span className="text-default">Health Care</span> clinic was opened in 2014, since then we are providing holistic care in the field of child health, vaccination, joint pain, back pain, musculoskeletal pain, Rheumatological problems, diabetes, hypertension, cardio respiratory problems <br /> We have successfully managed over 10000 patients in the past 3 years.</p>
           <br />
           <AboutSection3 />
         </div>
@@ -357,7 +357,7 @@ class AboutSection2Dot1 extends React.Component {
                 <span className="icon default-bg small"><i className="fa fa-user-md"></i></span>
                 <div className="body">
                   <h3 className="logo-font mt-4"><span className="text-default">O.M Childcare</span> Services</h3>
-                  <p>Content for childcare. Provide some description here, add more details and information, what else?</p>
+                  <p> <br /> </p>
                   <div className="separator-3"></div>
                   <ul className="list-icons animate flipInX">
                     <li>Child specialist<i className="fa fa-check-square-o"></i></li>
@@ -376,7 +376,7 @@ class AboutSection2Dot1 extends React.Component {
                 <span className="icon default-bg small"><i className="fa fa-medkit"></i></span>
                 <div className="body">
                   <h3 className="logo-font mt-4"><span className="text-default">O.M Healthcare</span> Services </h3>
-                  <p>Content for childcare. Provide some description here, add more details and information, what else?</p>
+                  <p> <br /> </p>
                   <div className="separator-2"></div>
                   <ul className="list-icons">
                     <li><i className="fa fa-check-square-o"></i>Rheumatology-Rheumatoid arthritis & SLE</li>
@@ -634,7 +634,7 @@ class NewsAndServicesSection extends React.Component {
                   </div>
                   <div id="collapseOne-2" className="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
                     <div className="card-block bordered p-15">
-                      We provide outpatient services in clinic from Monday to Saturday at evenings 6-9pm. You may confirm your appointment by calling number 9551625019 between 5-6pm. You will be guided further regarding the exact time by our clinic manager. If you require vaccination, the same need to be informed through phone. In case you have any specific requirements like counseling or special testing, the same need to be informed over phone. It would be more useful and informative, if you could bring the old consultation records or other medical records from any other Centre.
+                      We provide outpatient services in clinic from Monday to Saturday at evenings 6:30 PM - 9:00 PM. You may confirm your appointment by calling number +91 9551625019 between 10:00 AM - 11:00 AM and 5:00 PM - 6:00 PM. You will be guided further regarding the exact time by our clinic manager. If you require vaccination, the same need to be informed through phone. It would be more useful and informative, if you could bring the old consultation records or other medical records from any other Centre. In case you have any specific requirements like counseling or special testing, the same need to be informed over phone.
                     </div>
                   </div>
                 </div>
@@ -677,7 +677,7 @@ class NewsAndServicesSection extends React.Component {
                   </div>
                   <div id="collapseFour-2" className="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
                     <div className="card-block bordered p-15">
-                      We provide consultation for patient ailments as well provide master health checkup for adults and routine health checkup for children.
+                      We provide master health checkup for adults, routine health check up for children, preterm baby follow up care, fitness certificate for occupation purposes, health checkup for overseas and airtravel, vaccination for international travel and physical fitness for school going children.
                     </div>
                   </div>
                 </div>
@@ -719,7 +719,7 @@ class NewsAndServicesSection extends React.Component {
                   </div>
                   <div id="collapseSix-2" className="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
                     <div className="card-block bordered p-15">
-                      Add more details or information or description<a href="#">Read More<i className="fa fa-long-arrow-right pl-1"></i></a>
+                      Health education is any combination of learning experiences designed to help individuals and communities improve their health, by increasing their knowledge or influencing their attitudes. We provide health education at individual level, community level as in schools and work places.
                     </div>
                   </div>
                 </div>
@@ -733,7 +733,7 @@ class NewsAndServicesSection extends React.Component {
                   </div>
                   <div id="collapseSeven-2" className="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
                     <div className="card-block bordered p-15">
-                      Add more details or information or description<a href="#">Read More<i className="fa fa-long-arrow-right pl-1"></i></a>
+                      We provide professional assistance and guidance to patients and their families regarding health problems. We try to assist you in managing your health problems with clarified vision and finding alternative solutions.
                     </div>
                   </div>
                 </div>
@@ -771,7 +771,7 @@ class FooterMain extends React.Component {
                       </div>
                       <div className="row">
                         <div className="col-lg-6">
-                          <p>We have successfully managed nearly 10,000 patients in the past 3 years. We develop strong bonds with many of our patients and gain great satisfaction from seeing their happiness. Reach us at., </p>
+                          <p>We have successfully managed over 10,000 patients in the past 3 years. We develop strong bonds with many of our patients and gain great satisfaction from seeing their happiness. Reach us at., </p>
                           <ul className="list-icons">
                             <li><i className="fa fa-map-marker pr-10 text-default"></i>Old No-31, New No-13, Kamaraj Salai, Anagaputhur, Chennai - 600 070</li>
                             <li><i className="fa fa-phone pr-10 text-default"></i> +91 95516 25019, +91 94446 98388</li>
@@ -858,7 +858,7 @@ class TeamSection extends React.Component {
             <div className="col-lg-10">
               <h3 className="mt-4 text-center">Meet Our <span className="text-default">Team</span></h3>
               <div className="separator"></div>
-              <p className="lead text-center">O.M Clinic is led by couple of Young Experienced Doctors. <br />Our Team is responsible for Family centred care, Great bond and Satisfaction. <br /> Medicine is not just a business to us. It is our life. Our business and reputation rests on the happiness of every individual patient we see and your privacy is absolutely paramount. You will feel our warmth and support from the moment you walk through our door.  </p>
+              <p className="lead text-center">O.M Clinic is led by couple of Young Experienced Doctors. <br />Our Team is responsible for Family centred care, Great bond and Satisfaction. Our business and reputation rests on the happiness of every individual patient we see and your privacy is absolutely paramount. You will feel our warmth and support from the moment you walk through our door. </p>
             </div>
           </div>
         </div>
@@ -895,9 +895,8 @@ class TeamSection extends React.Component {
                           </div>
                         </div>
                         <br />
-                        <p><b>Sabarinath Mahadevan</b>, Child Specialist has been in paediatric practice for more than <span className="text-default">x years</span> with particular interests in Child Vaccination, Adolscent care, Child Development screening, Newborn care (upto 1 month of life), Allergy, Asthma, Respiratory Problems. </p>
-                        <p>Sabarinath is a enthusiastic paediatrician, who was graduated from <span className="text-default">college name</span>. He is also a proud father of 3 year old beautiful daughter and therefore he understands the importance of good paediatric care.</p>
-                        <p>Along side private consulting at Pammal and Pallavaram, Sabarinath also works at the <span className="text-default"> Govt Medical College at Chengalpet</span>. He also teaches within the Paediatrics department in Chengalpet Govt Medical College.</p>
+                        <p><b>Sabarinath Mahadevan</b>, in practice for around 10 years with particular interests in Management of Childhood Infections, Allergy and Immunological problems. He also manages children with Respiratory Illness, Asthma, Adolescent Health problems, Newborn Care (upto 1 month of life), Routine Vaccination and Vaccination in special circumstances.</p>
+                        <p>Sabarinath is a enthusiastic paediatrician, who did his undergraduation in Chengalpattu Government Medical College and Postgraduation from Madurai Medical College. He has experience of working in Kanchipuram district headquarters hospital Pediatric Department for a period of 3 years. He has also served as Assistant Professor in Department of pediatrics in Chengalpattu Government Medical College for a period of around 2 years. He is also qualified for part 1 and part 2 of MRCPCH (UK). Currently he is working in Department of Immunology, Madras Medical College.</p>
                         <h4>Languages Spoken</h4>
                         <p>Tamil, English, Hindi</p>
                       </div>
@@ -944,8 +943,7 @@ class TeamSection extends React.Component {
                           </div>
                         </div>
                         <br />
-                        <p><b>Saranya Chinnadurai</b>, who has graduated as Rheumatologist from <span className="text-default">college name</span>. She is also one of the very few female Rheumatologist in Pammal, Pallavaram and the Surrounding places. </p>
-                        <p>Saranya has vast experience in General Medicine, Muscle-Joint care, who also continues to be active in teaching and research. </p>
+                        <p><b>Dr Saranya Chinnadurai</b> is a physician, actively involved in Management of Adult and Gediatric Health problems for past 10 years. She completed her MBBS from Chengalpattu Government Medical College and MD in Internal Medicine from Tanjore Medical College. She has competed her superspeciality in DM Clinical Immunology and Rheumatology from Madras Medical College. She has various publications under her name in esteemed journals and she has vast experience in management of joint pain, back pain, muscle pain, rheumatoid arthritis, SLE, diabetes, hypertension and other rheumatological problems. She is currently working as an Assistant Professor in Department of Rheumatology, Sri Ramachandra Medical College, Porur.</p>
                         <h4>Languages Spoken</h4>
                         <p>Tamil, English, Hindi</p>
                       </div>
