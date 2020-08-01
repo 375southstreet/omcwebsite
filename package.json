@@ -2,7 +2,8 @@
   "name": "omc-web",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://375southstreet.github.io/omcwebsite/",
+  "homepage": "http://omhealthcareclinic.com",
+  "homepage1": "https://375southstreet.github.io/omcwebsite/",
   "dependencies": {
     "animate.css": "^3.7.0",
     "gh-pages": "^1.2.0",
@@ -15,7 +16,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "gh-deploy": "gh-pages -d build",
+    "aws-deploy": "aws s3 sync build/ s3://omhealthcareclinic.com",
     "eject": "react-scripts eject"
   }
 }

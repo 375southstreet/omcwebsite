@@ -139,7 +139,7 @@ class NotificationBarLeft extends React.Component {
           <ul className="social-links circle small clearfix hidden-sm-down">
             <li className="twitter"><a href="https://twitter.com/omcarepammal"><i className="fa fa-twitter"></i></a></li>
             <li className="youtube"><a href="#"><i className="fa fa-youtube-play"></i></a></li>
-            <li className="facebook"><a href="https://www.facebook.com/omcare.pammal"><i className="fa fa-facebook"></i></a></li>
+            <li className="facebook"><a href="https://www.facebook.com/Omhealthcareclinic"><i className="fa fa-facebook"></i></a></li>
           </ul>
           <div className="social-links hidden-md-up circle small pull-right">
             <div className="btn-group dropdown">
@@ -147,7 +147,7 @@ class NotificationBarLeft extends React.Component {
               <ul className="dropdown-menu dropdown-animation" aria-labelledby="header-top-drop-1">
                 <li className="twitter"><a href="https://twitter.com/omcarepammal"><i className="fa fa-twitter"></i></a></li>
                 <li className="youtube"><a href="#"><i className="fa fa-youtube-play"></i></a></li>
-                <li className="facebook"><a href="https://www.facebook.com/omcare.pammal"><i className="fa fa-facebook"></i></a></li>
+                <li className="facebook"><a href="https://www.facebook.com/Omhealthcareclinic"><i className="fa fa-facebook"></i></a></li>
               </ul>
             </div>
           </div>
@@ -236,7 +236,6 @@ class SliderBox extends React.Component {
                 <h1 className="bannerHeading">O.M Health Care</h1>
                 <h3 className="bannerCaptionLevel1 animated fadeInUp">Dr. Saranya Chinnadurai, <em className="bannerCaptionLevel2-1" style={degreeStyle}>M.B.B.S., M.D. in General Medicine, DM in Rheumatology</em></h3>
                 <h3 className="bannerCaptionLevel2 animated fadeInUp">Rheumatology and Muscle, Joint care Specialist</h3>
-                <h3 className="bannerCaptionLevel3 animated fadeInUp">இரத்த அழுத்தம், சர்க்கரை நோய் சிறப்பு மருத்துவர்</h3>
                 <h3 className="bannerCaptionLevel3 animated fadeInUp">மூட்டு தசை இணைப்புத்திசு நோயிகளியல் துறை நிபுணர்</h3>
               </div>
             </div>
@@ -255,7 +254,6 @@ class SliderBox extends React.Component {
                 <h1 className="bannerHeading">O.M Health Care</h1>
                 <h3 className="bannerCaptionLevel1 animated fadeInUp">Dr. Saranya Chinnadurai, <em className="bannerCaptionLevel2-1" style={degreeStyle}>M.B.B.S., M.D. in General Medicine, DM in Rheumatology</em></h3>
                 <h3 className="bannerCaptionLevel2 animated fadeInUp">Rheumatology and Muscle, Joint care Specialist</h3>
-                <h3 className="bannerCaptionLevel3 animated fadeInUp">இரத்த அழுத்தம், சர்க்கரை நோய் சிறப்பு மருத்துவர்</h3>
                 <h3 className="bannerCaptionLevel3 animated fadeInUp">மூட்டு தசை இணைப்புத்திசு நோயிகளியல் துறை நிபுணர்</h3>
               </div>
             </div>
@@ -329,7 +327,7 @@ class AboutSection extends React.Component {
         <br />
           <h3 className="title logo-font text-center text-default">O.M Child &nbsp;<span className="text-muted">and</span>&nbsp; Health Care</h3>
           <div className="separator"></div>
-          <p className="text-center"><span className="text-default">O.M Child</span> & <span className="text-default">Health Care</span> clinic was opened in 2014, since then we are providing holistic care in the field of child health, vaccination, joint pain, back pain, musculoskeletal pain, Rheumatological problems, diabetes, hypertension, cardio respiratory problems <br /> We have successfully managed over 10000 patients in the past 3 years.</p>
+          <p className="text-center"><span className="text-default">O.M Child</span> & <span className="text-default">Health Care</span> clinic was opened in 2014, since then we are providing holistic care in the field of child health, vaccination, joint pain, back pain, muskuloskeletal problems, Rheumatological problems, diabetes, hypertension, cardio respiratory problems <br /> We have successfully managed over 10000 patients in the past 3 years.</p>
           <br />
           <AboutSection3 />
         </div>
@@ -379,11 +377,12 @@ class AboutSection2Dot1 extends React.Component {
                   <p> <br /> </p>
                   <div className="separator-2"></div>
                   <ul className="list-icons">
-                    <li><i className="fa fa-check-square-o"></i>Rheumatology-Rheumatoid arthritis & SLE</li>
+                    <li><i className="fa fa-check-square-o"></i>Rheumatology - Arthritis (Rheumatoid arthritis, Osteoarthritis)</li>
+                    <li><i className="fa fa-check-square-o"></i>SLE</li>
                     <li><i className="fa fa-check-square-o"></i>Diabetes</li>
                     <li><i className="fa fa-check-square-o"></i>Hypertension</li>
                     <li><i className="fa fa-check-square-o"></i>Back & Joint pain</li>
-                    <li><i className="fa fa-check-square-o"></i>Musculoskeletal pain</li>
+                    <li><i className="fa fa-check-square-o"></i>Muskuloskeletal problems</li>
                     <li><i className="fa fa-check-square-o"></i>Respiratory problems</li>
                   </ul>
                 </div>
@@ -461,23 +460,23 @@ class ServiceGallery extends React.Component {
           <div className="col-4">
             <div className="overlay-container">
               <img src="images/portfolio-1.png" alt="" />
-              <a href="images/portfolio-1.png" className="overlay-link small popup-img" title="Second image title">
+              <a href="images/portfolio-1.png" className="overlay-link small popup-img" title="Dengue Introduction">
                 <i className="fa fa-plus"></i>
               </a>
             </div>
           </div>
           <div className="col-4">
             <div className="overlay-container">
-              <img src="images/portfolio-2.jpg" alt=""/>
-              <a href="images/portfolio-2.jpg" className="overlay-link small popup-img" title="Third image title">
+              <img src="images/portfolio-2.png" alt=""/>
+              <a href="images/portfolio-2.png" className="overlay-link small popup-img" title="Econiomic Impact of Dengue">
                 <i className="fa fa-plus"></i>
               </a>
             </div>
           </div>
           <div className="col-4">
             <div className="overlay-container">
-              <img src="images/portfolio-3.jpg" alt=""/>
-              <a href="images/portfolio-3.jpg" className="overlay-link small popup-img" title="Fourth image title">
+              <img src="images/portfolio-3.png" alt=""/>
+              <a href="images/portfolio-3.png" className="overlay-link small popup-img" title="Why Dengue is Spreading">
                 <i className="fa fa-plus"></i>
               </a>
             </div>
@@ -489,16 +488,16 @@ class ServiceGallery extends React.Component {
 
           <div className="col-4">
             <div className="overlay-container">
-              <img src="images/portfolio-5.jpg" alt=""/ >
-              <a href="images/portfolio-5.jpg" className="overlay-link small popup-img" title="Fifth image title">
+              <img src="images/portfolio-4.png" alt=""/ >
+              <a href="images/portfolio-4.png" className="overlay-link small popup-img" title="Importance of Breastfeeding">
                 <i className="fa fa-plus"></i>
               </a>
             </div>
           </div>
           <div className="col-4">
             <div className="overlay-container">
-              <img src="images/portfolio-6.jpg" alt=""/>
-              <a href="images/portfolio-6.jpg" className="overlay-link small popup-img" title="Fourth image title">
+              <img src="images/portfolio-5.jpg" alt=""/>
+              <a href="images/portfolio-5.jpg" className="overlay-link small popup-img" title="Body Safety for Kids">
                 <i className="fa fa-plus"></i>
               </a>
             </div>
@@ -512,35 +511,6 @@ class ServiceGallery extends React.Component {
             </div>
           </div>
         </div>
-        <br />
-        <div className="row grid-space-20">
-
-          <div className="col-4">
-            <div className="overlay-container">
-              <img src="images/portfolio-7.jpg" alt=""/ >
-              <a href="images/portfolio-7.jpg" className="overlay-link small popup-img" title="Fifth image title">
-                <i className="fa fa-plus"></i>
-              </a>
-            </div>
-          </div>
-          <div className="col-4">
-            <div className="overlay-container">
-              <img src="images/portfolio-8.jpg" alt=""/>
-              <a href="images/portfolio-8.jpg" className="overlay-link small popup-img" title="Fourth image title">
-                <i className="fa fa-plus"></i>
-              </a>
-            </div>
-          </div>
-          <div className="col-4">
-            <div className="overlay-container">
-              <img src="images/portfolio-9.jpg" alt=""/ >
-              <a href="images/portfolio-9.jpg" className="overlay-link small popup-img" title="Fifth image title">
-                <i className="fa fa-plus"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-
 
       </div>
     )
@@ -749,6 +719,26 @@ class NewsAndServicesSection extends React.Component {
 };
 
 class FooterMain extends React.Component {
+  handleSubmit(event) {
+    var contactName = event.target.contactName.value;
+    var contactEmail = event.target.contactEmail.value;
+    var contactMessage = event.target.contactMessage.value;
+    const formAction="https://a8bab4c9b0.execute-api.us-east-1.amazonaws.com/final";
+    fetch(formAction, {
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
+      method: 'POST',
+      body: JSON.stringify({
+        Name: contactName,
+        Email: contactEmail,
+        Message: contactMessage
+      })
+    });
+    event.preventDefault();
+  }
+
   render(){
     return (
       <section id="contact-omc">
@@ -780,7 +770,7 @@ class FooterMain extends React.Component {
                           <ul className="social-links circle animated-effect-1">
                             <li className="twitter"><a href="https://twitter.com/omcarepammal"><i className="fa fa-twitter"></i></a></li>
                             <li className="youtube"><a href="#"><i className="fa fa-youtube"></i></a></li>
-                            <li className="facebook"><a href="https://www.facebook.com/omcare.pammal"><i className="fa fa-facebook"></i></a></li>
+                            <li className="facebook"><a href="https://www.facebook.com/Omhealthcareclinic"><i className="fa fa-facebook"></i></a></li>
                           </ul>
                         </div>
                         <div className="col-lg-6">
@@ -795,23 +785,25 @@ class FooterMain extends React.Component {
                     <div className="footer-content">
                       <h2 className="title">Contact Us</h2>
                       <br />
-                      <form className="margin-clear">
+                      <form className="margin-clear" onSubmit={this.handleSubmit} action="post" formAction="post">
                         <div className="form-group has-feedback">
-                          <label className="sr-only" htmlFor="name2">Name</label>
-                          <input type="text" className="form-control" id="name2" placeholder="Name" required="" />
+                          <label className="sr-only" htmlFor="contactName">Name</label>
+                          <input type="text" className="form-control" id="contactName" name="contactName" placeholder="Name" required="" />
                           <i className="fa fa-user form-control-feedback"></i>
                         </div>
                         <div className="form-group has-feedback">
-                          <label className="sr-only" htmlFor="email2">Email address</label>
-                          <input type="email" className="form-control" id="email2" placeholder="Enter email" required="" />
+                          <label className="sr-only" htmlFor="contactEmail">Email address</label>
+                          <input type="email" className="form-control" id="contactEmail" name="contactEmail" placeholder="Enter email" required="" />
                           <i className="fa fa-envelope form-control-feedback"></i>
                         </div>
                         <div className="form-group has-feedback">
-                          <label className="sr-only" htmlFor="message2">Message</label>
-                          <textarea className="form-control" rows="6" id="message2" placeholder="Message" required=""></textarea>
+                          <label className="sr-only" htmlFor="contactMessage">Message</label>
+                          <textarea className="form-control" rows="6" id="contactMessage" name="contactMessage" placeholder="Message" required=""></textarea>
                           <i className="fa fa-pencil form-control-feedback"></i>
                         </div>
-                        <button type="button" value="Send" className="margin-clear submit-button btn btn-default btn-sm hidden-xs btn-animated">Send  <i className="pl-1 fa fa-send"></i></button>
+                        <input type="submit" value="Send" name="sendMail" id="sendMail" className="margin-clear submit-button btn btn-default btn-sm hidden-xs btn-animated">
+
+                        </input>
                       </form>
                     </div>
                   </div>
@@ -916,7 +908,7 @@ class TeamSection extends React.Component {
                 <a href="#" className="overlay-link" title="Dr.C.Saranya, MBBS, MD (General Medicine), DM (Rheumatology)" data-toggle="modal" data-target="#teamMemberTwoModal"><i className="fa fa-link"></i></a>
                 <div className="overlay-bottom">
                   <div className="text">
-                    <h3 className="title">Dr.C.Saranya, <br/><em className="small" style={teamStyle3}>MBBS, MD (Gen Med)</em></h3>
+                    <h3 className="title">Dr.C.Saranya, <br/><em className="small" style={teamStyle3}>MBBS, MD (Gen Med), DM (Rheumatology) </em></h3>
                     <div className="separator light"></div>
                     <p className="medium margin-clear">
                       <em>Internal Medicine & Rheumatology</em>
@@ -943,7 +935,7 @@ class TeamSection extends React.Component {
                           </div>
                         </div>
                         <br />
-                        <p><b>Dr Saranya Chinnadurai</b> is a physician, actively involved in Management of Adult and Gediatric Health problems for past 10 years. She completed her MBBS from Chengalpattu Government Medical College and MD in Internal Medicine from Tanjore Medical College. She has competed her superspeciality in DM Clinical Immunology and Rheumatology from Madras Medical College. She has various publications under her name in esteemed journals and she has vast experience in management of joint pain, back pain, muscle pain, rheumatoid arthritis, SLE, diabetes, hypertension and other rheumatological problems. She is currently working as an Assistant Professor in Department of Rheumatology, Sri Ramachandra Medical College, Porur.</p>
+                        <p><b>Dr Saranya Chinnadurai</b> is a physician, actively involved in Management of Adult and Gediatric Health problems for past 10 years. She completed her MBBS from Chengalpattu Government Medical College and MD in Internal Medicine from Tanjore Medical College. She has competed her superspeciality in DM Clinical Immunology and Rheumatology from Madras Medical College. She has various publications under her name in esteemed journals and she has vast experience in management of joint pain, back pain, muscle pain, arthritis (rheumatoid arthritis, osteoarthritis), SLE, diabetes, hypertension and other rheumatological problems. She is currently working as an Assistant Professor in Department of Rheumatology, Sri Ramachandra Medical College, Porur.</p>
                         <h4>Languages Spoken</h4>
                         <p>Tamil, English, Hindi</p>
                       </div>
